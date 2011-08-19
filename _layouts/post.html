@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ page.title }} - Justin Voss</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/justinvoss.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/code.css">
+
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7265450-6']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+    
+</head>
+<body>
+
+<div id="header">
+    <div class="page">
+        <h1 id="logo"><a href="/">Justin Voss.com</a></h1>
+    </div>
+</div>
+
+<div class="page">
+
+    <div class="title">
+        <p class="date">{{ page.date | date: "%d %B %Y" }} {% if page.categories != empty %}
+                &ndash; filed under {{ page.categories | array_to_sentence_string }}
+            {% endif %}</p>
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    {{ content }}
+</div>
+
+<div id="footer">
+    <div class="page">
+    <p>You've just finished reading <i>{{ page.title }}</i>, an article by me,&nbsp;<a href="/">Justin&nbsp;Voss</a>.</p>
+    <p>Comments, corrections, and anything else can be sent to <a href="mailto:justin@bleedingwolf.com">justin@bleedingwolf.com</a>.</p>
+    <p>Support me and my writing by buying my iPhone app <a href="http://bit.ly/photo-dialer">Photo Dialer</a>.</p>
+    </div>
+</div>
+
+</body>
+</html>

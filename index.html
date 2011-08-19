@@ -1,0 +1,30 @@
+---
+layout: default
+title: Who is Justin Voss?
+---
+
+<p><img id="gravatar" src="http://gravatar.com/avatar/c5856ad10e268ebfe179eaf73ac523d8?s=45" alt="Justin's Gravatar"> I'm one half of <a href="http://bleedingwolf.com/">Bleeding Wolf Productions</a>, where
+    <a href="http://twitter.com/kylerturner">Kyle</a> and I conjure up iPhone apps and produce wicked web designs. Hire us!</p>
+
+<div style="clear: both"></div>
+
+<p><a href="mailto:justin@bleedingwolf.com">justin@bleedingwolf.com</a>,
+    <a href="http://twitter.com/justinvoss">@justinvoss</a>,
+    <a href="http://forrst.com/people/justinvoss">Forrst</a></p>
+
+<h1>Journal</h1>
+
+<p>I don&rsquo;t always write articles, but when I do I publish them here.</p>
+
+{% assign month = '' %}
+
+{% for post in site.posts %}
+
+    {% capture this_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+    {% if month != this_month | date: "%B" %}<h2>{{ this_month }}</h2>{% endif %}
+    {% assign month = this_month %}
+    
+    <p class="post-link"><span>{{ post.date | date: "%m/%d" }} <span class="star">&#x2605;</span></span>
+        <a href="{{ post.url }}">{{ post.title }}</a></p>
+    
+{% endfor %}

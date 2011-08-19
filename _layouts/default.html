@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/justinvoss.css">
+    
+    <!-- OpenID stuff: -->
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://durandal2005.myopenid.com/" />
+    <link rel="openid2.local_id" href="http://durandal2005.myopenid.com" />
+    <link rel="openid2.provider" href="http://www.myopenid.com/server" />
+    <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=durandal2005.myopenid.com" />
+    
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7265450-6']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+</head>
+<body>
+
+<div id="header">
+    <div class="page">
+        <h1 id="logo"><a href="/">Justin Voss.com</a></h1>
+    </div>
+</div>
+
+<div class="page">
+
+    <div class="title">
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    {{ content }}
+</div>
+
+</body>
+</html>
