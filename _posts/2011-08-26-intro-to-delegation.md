@@ -8,7 +8,7 @@ In [my article last week about target-action][target-action], I mentioned the de
 another common pattern in Cocoa. Apple's libraries make heavy use of delegation so you can reuse 
 their code without needing to subclass the provided classes.
 
-To illustrate how to implement delegates, we'll take a brief look at both the Core Location and
+To illustrate how to implement delegates, I'll talk briefly about both the Core Location and
 Address Book frameworks that are included in the iOS SDK.
 
 [target-action]: http://justinvoss.com/programming/2011/08/19/cocoa-target-action/
@@ -57,7 +57,7 @@ The `viewDidAppear:` method starts up the location framework, which abstracts aw
 GPS (or cell tower triangulation). The `startUpdatingLocation` method returns immediately, so your
 app's main thread won't be blocked.
 
-At some point in the future, after the location framework has determined the user's location, the
+At some point in the future, after the framework has determined the user's location, the
 `locationManager:didUpdateToLocation:fromLocation:` method will be called.[^denied] As the user moves around,
 the location manager will continue to call this method on the delegate until you ask it to stop
 updating the location.
@@ -190,9 +190,11 @@ Apple has allowed us to remove a lot of code that we would normally have to writ
 Delegating in Your Code
 -----------------------
 
-When designing your objects, take a minute to consider if the app-specific features could be
-implemented by a delegate, leaving reusable code in the original class. You might find that
-with just a few delegate methods, most of the code can be reused without changes in another app.
+When designing your own objects, take a minute to consider if the app-specific features could be
+implemented by a delegate, leaving reusable code in the original class. For example, if your app uses
+WebSockets to connect to a live stream of data, split the WebSocket-specifics into a generic class that
+delegates to an app-specific class. You might find that with just a few delegate methods, most of 
+the code can be reused in another app without changes: just give it a different delegate.
 
 When using a delegate from your class, keep a few tips and tricks in mind:
 
@@ -211,6 +213,6 @@ Next Week
 ---------
 
 What do you want to read for next Friday's article? I'm thinking either data sources, or diving
-into something less basic, like working with REST APIs or Bonjour networking. Cast your vote
+into something more advanced, like working with REST APIs or Bonjour networking. Cast your vote
 for next week's topic in the comments!
 
