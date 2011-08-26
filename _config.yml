@@ -3,4 +3,4 @@ permalink: pretty
 
 lsi:       true
 pygments:  true
-markdown:  rdiscount
+markdown:  kramdown

@@ -72,7 +72,35 @@ ul {
         margin-bottom: 1.0em;
     }
 
-p {
+.footnotes {
+    border-top: 2px solid #aaa;
+    padding-top: 2em;
+}
+
+  .footnotes ol {
+      list-style: decimal outside;
+  }
+
+  .footnotes ol li {
+    margin-bottom: 2em;
+  }
+
+.footnotes p {
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+a[rel~=footnote] {
+  vertical-align: super;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+a[rev~=footnote] {
+  margin-left: 5px;
+}
+
+p, li {
     line-height: 1.6;
 }
 
