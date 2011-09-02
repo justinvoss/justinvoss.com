@@ -125,6 +125,10 @@ p a,
     text-shadow: 0px 1px 0px #f2f2f2;
 }
     
+    #disqus_thread a {
+        text-shadow: none;
+    }
+    
     p a:hover {
         border-bottom: 1px solid #A64626;
     }
