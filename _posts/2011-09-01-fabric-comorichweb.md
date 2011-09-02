@@ -1,10 +1,10 @@
 ---
 layout: post
 category: speaking
-title: Talking About Fabric at Comorichweb 
+title: Talking About Fabric at CoMoRichWeb 
 ---
 
-Last week, [Greg Aker][greg] and I gave a talk at [Comorichweb][comorichweb] about [Fabric][],
+Last week, [Greg Aker][greg] and I gave a talk at [CoMoRichWeb][comorichweb] about [Fabric][],
 a Python tool for automating sysadmin tasks over SSH. This is the first time at Comorichweb 
 that we had someone record video, (thank you [Robert Boyd][rboyd]) so enjoy the talk below.
 
