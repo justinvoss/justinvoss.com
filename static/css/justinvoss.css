@@ -2,6 +2,7 @@
 .page {
     margin: 0 auto;
     width: 750px;
+    position: relative;
 }
 
 body {
@@ -21,6 +22,14 @@ body {
         width: 150px;
         background: transparent url("/static/images/headerlogo.png") top center no-repeat;
         text-indent: -9999em;
+    }
+    
+    #header #atomlink {
+        background: transparent url("/static/images/feed.png") left center no-repeat;
+        padding-left: 21px;
+        position: absolute;
+        top: 0.9em;
+        right: 0;
     }
 
 #footer {
@@ -119,7 +128,8 @@ p, li {
     }
 
 p a,
-#disqus_thread a {
+#disqus_thread a,
+#atomlink {
     text-decoration: none;
     color: #A64626;
     text-shadow: 0px 1px 0px #f2f2f2;
