@@ -2,6 +2,24 @@
 @font-size: 14px;
 @baseline-height: 22px;
 
+
+// Mixins, stolen shamelessly from Bootstrap
+
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+
+// justinvoss.com styles
+
 .page {
     margin: 0 auto;
     width: 750px;
@@ -52,8 +70,7 @@ body {
     margin: 12px;
     position: relative;
     top: -1em;
-    -webkit-box-shadow: 0px 2px 4px #888;
-    -moz-box-shadow: 0px 2px 4px #888;
+    .box-shadow(0px 2px 4px #888);
     
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
 }
@@ -182,9 +199,7 @@ pre {
 
 code {
     background-color: #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    .border-radius(3px);
     padding: 1px 2px;
 }
 

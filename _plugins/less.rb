@@ -31,7 +31,8 @@ module Jekyll
         FileUtils.mkdir_p(File.dirname(css_path))
         
         begin
-          command = [lessc_bin, 
+          command = [lessc_bin,
+                     '-x',
                      less_path, 
                      css_path
                      ].join(' ')
