@@ -21,13 +21,13 @@
 // justinvoss.com styles
 
 .page {
-    margin: 0 auto;
+    margin: 0 @baseline-height;
     width: 750px;
     position: relative;
 }
 
 body {
-    background: #eee;
+    background: #fff;
     font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
     font-size: @font-size;
 }
@@ -84,7 +84,6 @@ h1 {
     font-size: 30px;
     line-height: @baseline-height * 2;
     margin-bottom: @baseline-height;
-    // text-shadow: white 0px 1px 0px;
 }
 
   h1.page-title {
@@ -108,6 +107,7 @@ p, pre, ul, hr, iframe {
 
 ul {
     list-style: disc outside;
+    margin-left: @baseline-height;
 }
 
     ul li {
@@ -115,12 +115,13 @@ ul {
     }
 
 .footnotes {
-    border-top: 2px solid #aaa;
-    padding-top: 2em;
+    border-top: 1px solid #999;
+    padding-top: @baseline-height;
 }
 
   .footnotes ol {
-      list-style: decimal outside;
+      list-style: decimal inside;
+      margin-left: @baseline-height;
   }
 
   .footnotes ol li {
@@ -143,6 +144,7 @@ a[rev~=footnote] {
 }
 
 p, li {
+    width: @font-size * 35;
     line-height: @baseline-height;
 }
 
@@ -153,23 +155,27 @@ p, li {
     p.post-link span {
         color: #777;
         font-weight: bold;
-        // text-shadow: white 0px 1px 0px;
     }
     
     p.post-link .star {
         margin: 0 0.25em;
     }
 
+
+#disqus_thread {
+  width: @font-size * 35;
+}
+
 p a,
+li a,
 #disqus_thread a,
 #atomlink {
     text-decoration: none;
     color: #A64626;
-    // text-shadow: 0px 1px 0px #f2f2f2;
 }
     
-    #disqus_thread a {
-        // text-shadow: none;
+    #disqus_thread li {
+        width: auto;
     }
     
     p a:hover {
@@ -184,17 +190,16 @@ p a,
 
 pre {
     display: block;
-    border: 1px solid #aaa;
+    border-left: 1px solid #aaa;
 }
 
     pre code {
         display: block;
-        border: 4px solid #eee;
+        border-left: 4px solid #eee;
         background: white;
         padding: 8px;
-        font-size: 11px;
-        overflow: auto;
-        overflow-y: hidden;
+        font-size: @font-size;
+        line-height: @font-size + 3;
         height: 99%;
     }
 
