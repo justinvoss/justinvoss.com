@@ -1,4 +1,7 @@
 
+@font-size: 14px;
+@baseline-height: 22px;
+
 .page {
     margin: 0 auto;
     width: 750px;
@@ -8,7 +11,7 @@
 body {
     background: #d6d6d6 url("/static/images/papertexture.png") top center;
     font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
-    font-size: 14px;
+    font-size: @font-size;
 }
 
 #header {
@@ -36,7 +39,7 @@ body {
     border-top: 1px solid #AAA;
     background: #F4F4F4;
     margin: 0;
-    padding: 1em 0 1px 0;
+    padding: @baseline-height 0 1px 0;
 }
 
     #footer p {
@@ -60,18 +63,29 @@ body {
     }
 
 h1 {
-    font-size: 165%;
+    font-size: 30px;
+    line-height: @baseline-height * 2;
+    margin-bottom: @baseline-height;
     text-shadow: white 0px 1px 0px;
-    margin-bottom: 1em;
 }
+
+  h1.page-title {
+      padding-bottom: 9px;
+      border-bottom: 1px solid #999;
+  }
 
 h2 {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    font-size: 24px;
+    line-height: @baseline-height * 2;
 }
 
-p, pre, ul, hr {
-    margin-bottom: 2em;
+h3 {
+    font-size: 18px;
+    line-height: @baseline-height * 2;
+}
+
+p, pre, ul, hr, iframe {
+    margin-bottom: @baseline-height;
 }
 
 ul {
@@ -111,7 +125,7 @@ a[rev~=footnote] {
 }
 
 p, li {
-    line-height: 1.6;
+    line-height: @baseline-height;
 }
 
     p.post-link {
@@ -165,6 +179,14 @@ pre {
         overflow-y: hidden;
         height: 99%;
     }
+
+code {
+    background-color: #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 1px 2px;
+}
 
 blockquote {
   margin-left: 8px;

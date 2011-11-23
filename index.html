@@ -12,7 +12,7 @@ title: Who is Justin Voss?
     <a href="http://twitter.com/justinvoss">@justinvoss</a>,
     <a href="http://forrst.com/people/justinvoss">Forrst</a></p>
 
-<h1>Journal</h1>
+<h2>Journal</h2>
 
 <p>I don&rsquo;t always write articles, but when I do I publish them here.</p>
 
@@ -21,7 +21,7 @@ title: Who is Justin Voss?
 {% for post in site.posts %}
 
     {% capture this_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
-    {% if month != this_month | date: "%B" %}<h2>{{ this_month }}</h2>{% endif %}
+    {% if month != this_month | date: "%B" %}<h3>{{ this_month }}</h3>{% endif %}
     {% assign month = this_month %}
     
     <p class="post-link"><span>{{ post.date | date: "%m/%d" }} <span class="star">&#x2605;</span></span>

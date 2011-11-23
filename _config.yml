@@ -4,3 +4,5 @@ permalink: pretty
 lsi:       true
 pygments:  true
 markdown:  kramdown
+
+lessc: /Users/Justin/node_modules/less/bin/lessc
