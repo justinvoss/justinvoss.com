@@ -1,6 +1,5 @@
 ---
 layout: post
-category: programming
 title: Creating and Consuming Data Sources in UIKit
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: post
-category: announcements
 title: Simple Desktops for Mac
 ---
 

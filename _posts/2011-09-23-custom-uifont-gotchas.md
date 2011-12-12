@@ -1,6 +1,5 @@
 ---
 layout: post
-category: programming
 title: Custom UIFont Gotchas
 ---
 

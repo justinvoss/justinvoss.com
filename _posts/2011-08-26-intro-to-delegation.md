@@ -1,6 +1,5 @@
 ---
 layout: post
-category: programming
 title: Intro to Delegation - Core Location and Address Book UI
 ---
 

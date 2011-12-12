@@ -1,6 +1,5 @@
 ---
 layout: post
-category: speaking
 title: Talking About Fabric at CoMoRichWeb 
 ---
 

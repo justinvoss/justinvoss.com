@@ -1,6 +1,5 @@
 ---
 layout: post
-category: programming
 title: Smoothing Data with Low-Pass Filters
 ---
 
