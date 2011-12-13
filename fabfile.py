@@ -18,7 +18,7 @@ class PublishTask(tasks.Task):
     rsync_project(
       remote_dir = '/srv/justinvoss.com/www',
       local_dir = '_site/',
-      exclude = ['Mockup.psd', 'Procfile', 'fabfile.py'],
+      exclude = ['Mockup.psd', 'apple-touch-icon.psd', 'Procfile', 'fabfile.py'],
       delete = True
     )
     
