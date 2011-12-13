@@ -10,7 +10,7 @@ their code without needing to subclass the provided classes.
 To illustrate how to implement delegates, I'll talk briefly about both the Core Location and
 Address Book frameworks that are included in the iOS SDK.
 
-[target-action]: http://justinvoss.com/programming/2011/08/19/cocoa-target-action/
+[target-action]: http://justinvoss.com/2011/08/19/cocoa-target-action/
 
 
 What is a Delegate?
