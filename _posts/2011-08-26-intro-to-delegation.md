@@ -103,7 +103,7 @@ To prompt the user to choose a property (like phone number) for a contact, you h
 and give it a delegate. In [Photo Dialer][photo-dialer]'s case, that delegate is a `AddContactDelegate`.
 Here's the actual code that one of the view controllers uses to present the UI:
 
-[photo-dialer]: http://bit.ly/photo-dialer
+[photo-dialer]: http://bit.ly/photo-dialer-app
 
 {% highlight objectivec %}
 // a long time ago, in a view controller far, far away

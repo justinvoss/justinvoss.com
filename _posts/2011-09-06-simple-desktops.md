@@ -12,10 +12,10 @@ Big props go out to [Greg Aker][gaker] for server monkeying and [Louis Harboe][l
 
 Buy it, rate it, tell your friends, [email me][email] with any feedback.
 
-[appstore]: http://bit.ly/nW5Ia9
+[appstore]: http://bit.ly/simple-desktops-app
 [website]: http://simpledesktops.com/
 [gaker]: http://gregaker.net/
 [louis]: http://graphicpeel.com/
 [email]: mailto:justin@bleedingwolf.com
 
-<a href="http://bit.ly/nW5Ia9"><img width="750" height="661" src="/static/post_assets/2011-09-06-simpledesktops.png" alt=""></a>
+<a href="http://bit.ly/simple-desktops-app"><img width="750" height="661" src="/static/post_assets/2011-09-06-simpledesktops.png" alt=""></a>

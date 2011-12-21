@@ -145,7 +145,7 @@ will interact with the data source; this will be different for every situation. 
 in [Kowabunga][], called `LOGridView`, we decided to use a data source because we knew that at some point we would want multiple pages of
 icons. Our strategy was to create a simplified version of the `UITableView` data source. The two methods are:
 
-[Kowabunga]: http://bit.ly/kowabunga
+[Kowabunga]: http://bit.ly/kowabunga-app
 
 
 {% highlight objectivec %}
