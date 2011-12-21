@@ -24,8 +24,8 @@ UITableView that takes up most or all of screen. This pattern is so common, in f
 Apple includes a view controller class called [UITableViewController][] that does all this
 wiring for you!
 
-[UITableView]: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITableView_Class/Reference/Reference.html
-[UITableViewController]: http://developer.apple.com/library/ios/#documentation/UIKit/Reference/UITableViewController_Class/Reference/Reference.html
+[UITableView]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableView_Class/Reference/Reference.html
+[UITableViewController]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewController_Class/Reference/Reference.html
 
 
 To provide data to the table view, the data source implements at least these methods:

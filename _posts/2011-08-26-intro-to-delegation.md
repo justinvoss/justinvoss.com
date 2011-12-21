@@ -34,7 +34,7 @@ When using the [Core Location][corelocation] framework, your code may start a re
 needs a while to warm up and connect to the satellites. Instead of blocking or polling the hardware,
 your code provides delegate methods that will be notified when the location data is ready to be used.
 
-[corelocation]: http://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CoreLocation_Framework/_index.html#//apple_ref/doc/uid/TP40007123
+[corelocation]: http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CoreLocation_Framework/_index.html
 
 {% highlight objectivec %}
 - (void)viewDidAppear:(BOOL)animated
@@ -93,7 +93,7 @@ the [Address Book and Address Book UI frameworks][ab-docs]. The first is designe
 underlying contact data. The second is a set of pre-built views and interface elements for displaying,
 editing, and choosing contacts.
 
-[ab-docs]: http://developer.apple.com/library/ios/#documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html#//apple_ref/doc/uid/TP40007744
+[ab-docs]: http://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html
 
 When displaying the Address Book UI views, your code participates by setting itself as a delegate of the
 Apple-provided views. As the user makes their selections, your delegate will be notified and have the
