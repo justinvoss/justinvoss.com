@@ -7,9 +7,9 @@ Last week, my latest client project went live on the App Store. I'm thrilled to 
 a menu bar app for controlling iTunes, Rdio, and Spotify. It's on sale right now for just [$0.99 on the Mac App Store][appstore].
 
 [Greg Dougherty][greg], my client, has done a great job getting press attention for the app.
-So far, it's been mentioned on [The Unofficial Apple Weblog][tuaw], [CNET][cnet], [Lifehacker][lifehacker],
+So far, it's been mentioned on [The Unofficial Apple Weblog][tuaw], [CNET][cnet], [Lifehacker][lifehacker], [Cult of Mac][cultofmac]
 and a few other websites.
-Not long after launching, it even climbed to the #1 Music app in six different countries!
+Not long after launching, it even climbed to the #1 Music app in nine different countries!
 
 <img width="750" height="643" src="/static/post_assets/2012-02-13-skiptunes-website.png" alt="">
 
@@ -21,6 +21,7 @@ Not long after launching, it even climbed to the #1 Music app in six different c
 [tuaw]: http://www.tuaw.com/2012/02/13/daily-mac-app-simple-skip-tunes-feels-like-it-should-be-part-of/
 [lifehacker]: http://lifehacker.com/5882964/skip-tunes-gives-you-menu-bar-access-to-controls-for-rdio-spotify-and-itunes
 [cnet]: http://howto.cnet.com/8301-11310_39-57373279-285/gain-easy-control-of-your-music-with-mac-app-skip-tunes/
+[cultofmac]: http://www.cultofmac.com/146543/skip-tunes-a-simple-way-to-control-itunes-or-spotify-from-your-macs-menu-bar-review/
 
 
 Behind the Scenes
