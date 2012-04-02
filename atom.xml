@@ -17,7 +17,7 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://justinvoss.com{{ post.url }}"/>
+   <link href="http://justinvoss.com{{ post.url }}?utm_source=atomfeed&utm_medium=feed&utm_campaign=justinvoss"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://justinvoss.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
