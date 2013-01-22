@@ -1,7 +1,7 @@
 
 permalink: pretty
 
-lsi:       true
+lsi:       false
 pygments:  true
 markdown:  kramdown
 
