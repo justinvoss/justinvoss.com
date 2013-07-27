@@ -5,4 +5,5 @@ lsi:       false
 pygments:  true
 markdown:  kramdown
 
-lessc: /Users/Justin/node_modules/less/bin/lessc
+lessc: lessc
+

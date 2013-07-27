@@ -14,7 +14,7 @@ class PublishTask(tasks.Task):
   
   def run(self):
   
-    local('jekyll')
+    local('jekyll build')
     rsync_project(
       remote_dir = '/home/justinvoss/justinvoss.com/www',
       local_dir = '_site/',
