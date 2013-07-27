@@ -4,8 +4,8 @@ from fabric.api import *
 from fabric.contrib.project import rsync_project
 
 
-env.hosts = ['eldorado']
-env.user = 'bleedingwolf'
+env.hosts = ['atlantis']
+env.user = 'justinvoss'
 
 
 class PublishTask(tasks.Task):
@@ -16,11 +16,12 @@ class PublishTask(tasks.Task):
   
     local('jekyll')
     rsync_project(
-      remote_dir = '/srv/justinvoss.com/www',
+      remote_dir = '/home/justinvoss/justinvoss.com/www',
       local_dir = '_site/',
-      exclude = ['Mockup.psd', 'apple-touch-icon.psd', 'Procfile', 'fabfile.py'],
+      exclude = ['Mockup.psd', 'apple-touch-icon.psd', 'Procfile', 'fabfile.py', 'fabfile.pyc', 'README.md'],
       delete = True
     )
     
 
 publish = PublishTask()
+
