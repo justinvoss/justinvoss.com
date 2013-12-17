@@ -122,7 +122,7 @@ is added manually with `addAnnotation:` or in bulk by setting the `annotations` 
 The right time to reach for the data source pattern is when performance is an issue and the data lends itself well to
 being loaded piece-by-piece.
 
-[mkmapview]: #
+[mkmapview]: https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html
 
 [^mapview]: According to Apple's documentation, you should add all the annotations at once, even if they're not on-screen.
     As the user moves the map around, the map view will notify the delegate and ask it to create the pin views as-needed.
