@@ -12,19 +12,32 @@ layout: default
 <hr>
 
 <div id="disqus_thread"></div>
+<div id="disqus_placeholder">
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
 <script type="text/javascript">
+  (function () {
 
     var disqus_shortname = 'justinvoss';
 
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
     // var disqus_identifier = 'unique_dynamic_id_1234';
-    var disqus_url = 'http://justinvoss.com{{ page.url }}';
-
-    (function() {
+    window.disqus_url = 'http://justinvoss.com{{ page.url }}';
+    
+    var placeholderElement = document.getElementById('disqus_placeholder');
+    
+    var p = document.createElement('p');
+    p.textContent = 'Click to view comments.';
+    placeholderElement.appendChild(p);
+    
+    placeholderElement.addEventListener('click', function () {
+      placeholderElement.parentElement.removeChild(placeholderElement);
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+    });
+  })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
