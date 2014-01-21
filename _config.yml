@@ -5,5 +5,3 @@ lsi:       false
 pygments:  true
 markdown:  kramdown
 
-lessc: lessc
-

@@ -1,27 +1,30 @@
+---
+note: "Jekyll won't convert this file without a YAML header, so here is one."
+---
 
-@font-size: 16px;
-@baseline-height: 22px;
+$font-size: 16px;
+$baseline-height: 22px;
 
 
 // Mixins, stolen shamelessly from Bootstrap
 
-.border-radius(@radius: 5px) {
-  -webkit-border-radius: @radius;
-     -moz-border-radius: @radius;
-          border-radius: @radius;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
 }
 
-.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
-  -webkit-box-shadow: @shadow;
-     -moz-box-shadow: @shadow;
-          box-shadow: @shadow;
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+          box-shadow: $shadow;
 }
 
 
 // justinvoss.com styles
 
 .page {
-    margin: 0 @baseline-height;
+    margin: 0 $baseline-height;
     width: 750px;
     position: relative;
 }
@@ -29,7 +32,7 @@
 body {
     background: #fff;
     font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
-    font-size: @font-size;
+    font-size: $font-size;
 }
 
 #header {
@@ -49,8 +52,8 @@ body {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
     background: #F4F4F4;
-    margin: @baseline-height 0 0 0;
-    padding: @baseline-height 0 1px 0;
+    margin: $baseline-height 0 0 0;
+    padding: $baseline-height 0 1px 0;
 }
 
     #footer p {
@@ -76,7 +79,7 @@ body {
     margin: 12px;
     position: relative;
     top: -1em;
-    .box-shadow(0px 2px 4px #888);
+    @include box-shadow(0px 2px 4px #888);
     
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
 }
@@ -87,8 +90,8 @@ body {
 
 h1 {
     font-size: 30px;
-    line-height: @baseline-height * 2;
-    margin-bottom: @baseline-height;
+    line-height: $baseline-height * 2;
+    margin-bottom: $baseline-height;
 }
 
   h1.page-title {
@@ -98,21 +101,21 @@ h1 {
 
 h2 {
     font-size: 24px;
-    line-height: @baseline-height * 2;
+    line-height: $baseline-height * 2;
 }
 
 h3 {
     font-size: 18px;
-    line-height: @baseline-height * 2;
+    line-height: $baseline-height * 2;
 }
 
 p, pre, ul, hr, iframe {
-    margin-bottom: @baseline-height;
+    margin-bottom: $baseline-height;
 }
 
 ul {
     list-style: disc outside;
-    margin-left: @baseline-height;
+    margin-left: $baseline-height;
 }
 
     ul li {
@@ -120,8 +123,8 @@ ul {
     }
 
 p, li {
-    width: @font-size * 35;
-    line-height: @baseline-height * 1.3;
+    width: $font-size * 35;
+    line-height: $baseline-height * 1.3;
 }
 
     p.post-link {
@@ -139,16 +142,16 @@ p, li {
 
 
 #disqus_thread {
-  width: @font-size * 35;
+  width: $font-size * 35;
 }
 
 #disqus_placeholder {
-  width: @font-size * 35;
+  width: $font-size * 35;
   cursor: pointer;
 }
 
     #disqus_placeholder p {
-      font-size: @font-size * 1.3;
+      font-size: $font-size * 1.3;
       font-weight: bold;
       color: rgb(200, 203, 210);
     }
@@ -191,12 +194,12 @@ li a,
 
 .footnotes {
     border-top: 1px solid #999;
-    padding-top: @baseline-height;
+    padding-top: $baseline-height;
 }
 
   .footnotes ol {
       list-style: decimal inside;
-      margin-left: @baseline-height;
+      margin-left: $baseline-height;
   }
 
   .footnotes ol li {
@@ -206,6 +209,19 @@ li a,
 .footnotes p {
   margin-bottom: 0.5em;
   font-size: 0.9em;
+}
+
+p a.footnote-button:hover {
+  border-bottom: none;
+}
+
+.footnote-main-wrapper {
+  max-width: 30em;
+}
+
+.footnote-content-wrapper p,
+.footnote-content-wrapper li {
+  width: auto;
 }
 
 pre {
@@ -218,14 +234,14 @@ pre {
         border-left: 4px solid #eee;
         background: white;
         padding: 8px;
-        font-size: @font-size;
-        line-height: @font-size + 3;
+        font-size: $font-size;
+        line-height: $font-size + 3;
         height: 99%;
     }
 
 code {
     background-color: #eee;
-    .border-radius(3px);
+    @include border-radius(3px);
     padding: 1px 2px;
 }
 
