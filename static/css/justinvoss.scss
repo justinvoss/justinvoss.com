@@ -118,9 +118,14 @@ ul {
     margin-left: $baseline-height;
 }
 
-    ul li {
+    ul li, ol li {
         margin-bottom: 1.0em;
     }
+
+ol {
+  list-style: decimal outside;
+  margin-left: $baseline-height;
+}
 
 p, li {
     width: $font-size * 35;
@@ -140,6 +145,18 @@ p, li {
         margin: 0 0.25em;
     }
 
+blockquote {
+  display: block;
+  border-left: 1px solid #aaa;
+  color: #555;
+}
+
+    blockquote p {
+      display: block;
+      border-left: 4px solid #eee;
+      background: white;
+      padding: 8px;
+    }
 
 #disqus_thread {
   width: $font-size * 35;
@@ -243,13 +260,6 @@ code {
     background-color: #eee;
     @include border-radius(3px);
     padding: 1px 2px;
-}
-
-blockquote {
-  margin-left: 8px;
-  padding-left: 8px;
-  border-left: 4px solid white;
-  color: #555;
 }
 
 .title {
