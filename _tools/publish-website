@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+PATH_TO_SCRIPT=$(cd `dirname $0`; pwd -P)
+PATH_TO_PROJECT=`dirname $PATH_TO_SCRIPT`
+
+cd $PATH_TO_PROJECT
+
+rm -rf _site
+jekyll build
+rsync -v --compress --recursive --checksum --delete _site/ justinvoss@atlantis.bleedingwolf.com:justinvoss.com/www
