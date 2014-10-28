@@ -37,7 +37,7 @@ There are plenty of tutorials online that show you how to record multiple USB
 mics at once using your Mac. They usually go something like this:
 
 1. Plug in both microphones.
-2. Open the Audio MIDI Setup app,.
+2. Open the Audio MIDI Setup app.
 3. Create an Aggregate Device.
 4. Add both microphones to this new aggregate.
 5. In your audio recording app, select this aggregate as your input device.
