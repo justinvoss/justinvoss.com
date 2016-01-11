@@ -1,7 +1,7 @@
 
 # justinvoss.com
 
-The code is open; the content is &copy; 2011-2014 Justin Voss.
+The code is open; the content is &copy; 2011-2016 Justin Voss.
 
 ### Installing Dependencies
 
