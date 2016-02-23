@@ -1,7 +1,7 @@
 
 permalink: pretty
 
-lsi:       false
-pygments:  true
-markdown:  kramdown
+lsi:          false
+highlighter:  pygments
+markdown:     kramdown
 
