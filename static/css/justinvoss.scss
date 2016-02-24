@@ -8,12 +8,6 @@ $baseline-height: 22px;
 
 // Mixins, stolen shamelessly from Bootstrap
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-          border-radius: $radius;
-}
-
 @mixin box-shadow($shadow) {
   -webkit-box-shadow: $shadow;
      -moz-box-shadow: $shadow;
@@ -35,6 +29,12 @@ body {
     font-size: $font-size;
 }
 
+body.video-page {
+    background: #222;
+    color: #bdbdbd;
+    -webkit-font-smoothing: antialiased;
+}
+
 #header {
     height: 39px;
     background: #F4F4F4 url("/static/images/headerbg.png") top center repeat-x;
@@ -48,6 +48,14 @@ body {
         text-indent: -9999em;
     }
     
+    body.video-page #header {
+        background: #000;
+    }
+    
+    body.video-page #header #logo a {
+        background-image: url("/static/images/headerlogo-dark.png");
+    }
+    
 #footer {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
@@ -55,6 +63,11 @@ body {
     margin: $baseline-height 0 0 0;
     padding: $baseline-height 0 1px 0;
 }
+
+    body.video-page #footer {
+      background: #000;
+      border: none;
+    }
 
     #footer p {
         margin-bottom: 1em;
@@ -97,6 +110,10 @@ h1 {
   h1.page-title {
       padding-bottom: 9px;
       border-bottom: 1px solid #999;
+  }
+  
+  body.video-page h1.page-title {
+    border-color: #555;
   }
 
 h2 {
@@ -144,6 +161,16 @@ p, li {
     p.post-link .star {
         margin: 0 0.25em;
     }
+    
+    p.post-link span.post-badge {
+      font-weight: normal;
+      border-radius: 3px;
+      background-color: #333;
+      color: #e8e8e8;
+      padding: 4px 6px;
+      font-size: $font-size * 0.8;
+      margin-left: 0.5em;
+    }
 
 blockquote {
   display: block;
@@ -157,6 +184,15 @@ blockquote {
       background: white;
       padding: 8px;
     }
+
+.video-wrapper {
+  /* width will be set on the individual pages with a style tag */
+  margin: $baseline-height * 2 auto;
+}
+
+.video-wrapper .notes {
+  margin: $baseline-height;
+}
 
 #disqus_thread {
   width: $font-size * 35;
@@ -184,6 +220,12 @@ li a,
     color: rgb(166, 70, 38);
     border-bottom: 3px solid rgba(166, 70, 38, 0.4);
 }
+
+body.video-page p a,
+body.video-page li a {
+  color: #f5aa7d;
+  border-bottom: 1px solid #f5aa7d;
+}
     
     #disqus_thread li {
         width: auto;
@@ -191,6 +233,10 @@ li a,
     
     p a:hover {
         border-bottom: 3px solid rgb(166, 70, 38);
+    }
+    
+    body.video-page p a:hover {
+      border-bottom: 3px solid #f5aa7d;
     }
 
     a.footnote {
@@ -258,7 +304,6 @@ pre {
 
 code {
     background-color: #eee;
-    @include border-radius(3px);
     padding: 1px 2px;
 }
 
