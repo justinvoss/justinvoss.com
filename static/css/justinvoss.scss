@@ -36,8 +36,9 @@ body.video-page {
 }
 
 #header {
-    height: 39px;
-    background: #F4F4F4 url("/static/images/headerbg.svg") top center repeat-x;
+    height: 38px;
+    background: #F4F4F4;
+    border-bottom: 1px solid #aaa;
 }
 
     #header #logo a {
@@ -50,6 +51,8 @@ body.video-page {
     
     body.video-page #header {
         background: #000;
+        border-bottom: none;
+        height: 39px;
     }
     
     body.video-page #header #logo a {
