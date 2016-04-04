@@ -37,14 +37,14 @@ body.video-page {
 
 #header {
     height: 39px;
-    background: #F4F4F4 url("/static/images/headerbg.png") top center repeat-x;
+    background: #F4F4F4 url("/static/images/headerbg.svg") top center repeat-x;
 }
 
     #header #logo a {
         display: block;
         height: 39px;
         width: 150px;
-        background: transparent url("/static/images/headerlogo.png") top center no-repeat;
+        background: transparent url("/static/images/headerlogo.svg") top center no-repeat;
         text-indent: -9999em;
     }
     
@@ -53,7 +53,7 @@ body.video-page {
     }
     
     body.video-page #header #logo a {
-        background-image: url("/static/images/headerlogo-dark.png");
+        background-image: url("/static/images/headerlogo-dark.svg");
     }
     
 #footer {
@@ -71,11 +71,6 @@ body.video-page {
 
     #footer p {
         margin-bottom: 1em;
-    }
-    
-    #footer #atomlink {
-        background: transparent url("/static/images/feed.png") left center no-repeat;
-        padding-left: 21px;
     }
 
 #introduction {
