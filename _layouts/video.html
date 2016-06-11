@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>{% if page.title %}{{ page.title }} - Justin Voss{% else %}Justin Voss{% endif %}</title>
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bigfoot-default.css">
@@ -40,19 +42,26 @@
     </div>
 </div>
 
-<div class="video-wrapper" style="width: {{ page.video.width }}px">
-  <video class="video-js vjs-default-skin"
-    poster="/static/post_assets/{{ page.video.poster }}"
-    width="{{ page.video.width }}" height="{{ page.video.height }}" 
-    controls
-    preload="auto"
-    data-setup="{}">
-      <source src="{{ page.video.url }}" type="video/mp4">
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-      </p>
-  </video>
+{% assign video_padding = page.video.height | div: page.video.width | times: 100 | round %}
+
+<div class="video-wrapper" style="width: 100%; max-width: {{ page.video.width }}px;">
+  
+  <div class="video-aspect-ratio" style="position: relative; width: 100%; height: 0; padding-bottom: {{ video_padding }}%">
+    
+    <video class="video-js vjs-default-skin"
+      poster="/static/post_assets/{{ page.video.poster }}"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" 
+      controls
+      preload="auto"
+      data-setup="{}">
+        <source src="{{ page.video.url }}" type="video/mp4">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+    
+  </div>
   
   <div class="notes">
     <div class="title">

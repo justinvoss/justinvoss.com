@@ -11,7 +11,9 @@ So far, it's been mentioned on [The Unofficial Apple Weblog][tuaw], [CNET][cnet]
 [Cult of Mac][cultofmac], [Macworld][macworld] (3.5 out of 5 Mice) and a few other websites.
 Not long after launching, it even climbed to the #1 Music app in nine different countries!
 
+<div>
 <img width="750" height="643" src="/static/post_assets/2012-02-13-skiptunes-website.png" alt="">
+</div>
 
 [website]: http://skiptunes.com/
 [appstore]: http://bit.ly/skip-tunes-app
@@ -73,7 +75,9 @@ classes like `NSStatusItem` and `NSWorkspace`.
 [Chameleon]: http://chameleonproject.org/
 [The Iconfactory]: http://iconfactory.com/
 
+<div>
 <img width="749" height="330" src="/static/post_assets/2012-02-13-chameleon.png" alt="">
+</div>
 
 If I had to do it over again, I think I would still use Chameleon, although I think I would
 try a bit harder to get AppKit to behave. I generally don't like using cross-platform

@@ -78,7 +78,9 @@ It took a week or two, but this definitely did the trick: Blue reprogrammed
 my mic to use the serial number `777`, and we've been successfully using
 both microphones together ever since.
 
+<div>
 <img src="/static/post_assets/2014-05-09-yetis/Yeti-Serial-Numbers.png" alt="" title="">
+</div>
 
 Other models from Blue may also be affected; I've seen people online
 mention very similar issues when trying to use two [Snowball][snowball] microphones

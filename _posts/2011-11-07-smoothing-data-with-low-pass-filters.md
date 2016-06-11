@@ -53,7 +53,9 @@ the raw data, while the version on the right is using data run through a low-pas
 The results should speak for themselves: the filtered data is a little slower to react,
 but moves smoothly and deliberately. The raw data jumps and twitches too much for comfort.
 
-<iframe src="http://player.vimeo.com/video/31734175?portrait=0" width="751" height="563" frameborder="0" webkitAllowFullScreen="true" allowFullScreen="true"> </iframe>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 74.96%">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" src="http://player.vimeo.com/video/31734175?portrait=0" frameborder="0" webkitAllowFullScreen="true" allowFullScreen="true"> </iframe>
+</div>
 
 
 Show Me the Code!

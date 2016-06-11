@@ -1,13 +1,13 @@
 
 # justinvoss.com
 
-The code is open; the content is &copy; 2011-2016 Justin Voss.
+The oft-neglected homepage of Justin Voss.
 
 ### Installing Dependencies
 
-Install the base components: Jekyll, Kramdown, and Sass.
+Install the base components: Jekyll and Kramdown.
 
-    gem install jekyll kramdown sass
+    gem install jekyll kramdown
 
 Install Pygments for code highlighting.
 
