@@ -2,35 +2,39 @@
 layout: default
 ---
 
-<div id="introduction">
+<div class="page">
+
+  <div id="introduction">
     
-  <p>I'm a software developer at <a href="http://www.apple.com/">Apple</a>.
+    <p>I'm a software developer at <a href="http://www.apple.com/">Apple</a>.
 
-  <p>I co-host <i><a href="http://lowearthorbit.fm/">Low Earth Orbit</a></i>, a podcast about movies,
-     <br>video games, and more.</p>
+    <p>I co-host <i><a href="http://lowearthorbit.fm/">Low Earth Orbit</a></i>, a podcast about movies,
+       <br>video games, and more.</p>
 
-  <div style="clear: both"></div>
+    <div style="clear: both"></div>
 
-  <p>Email me at <a href="mailto:justin@bleedingwolf.com">justin@bleedingwolf.com</a>,
-     <br>or follow me on <a href="http://twitter.com/justinvoss" rel="me">Twitter</a>.</p>
+    <p>Email me at <a href="mailto:justin@bleedingwolf.com">justin@bleedingwolf.com</a>,
+       <br>or follow me on <a href="http://twitter.com/justinvoss" rel="me">Twitter</a>.</p>
+  </div>
+
+  {% assign month = '' %}
+
+  {% for post in site.posts %}
+
+      {% capture this_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
+      {% if month != this_month | date: "%B" %}<h3>{{ this_month }}</h3>{% endif %}
+      {% assign month = this_month %}
+    
+      {% assign badge = nil %}
+      {% if post.layout == 'video' %}
+      {% assign badge = 'video' %}
+      {% endif %}
+    
+      <p class="post-link"><span>{{ post.date | date: "%m/%d" }} <span class="star">&#x2605;</span></span>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {% if badge %}<span class="post-badge">{{badge}}</span>{% endif %}
+      </p>
+    
+  {% endfor %}
+
 </div>
-
-{% assign month = '' %}
-
-{% for post in site.posts %}
-
-    {% capture this_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
-    {% if month != this_month | date: "%B" %}<h3>{{ this_month }}</h3>{% endif %}
-    {% assign month = this_month %}
-    
-    {% assign badge = nil %}
-    {% if post.layout == 'video' %}
-    {% assign badge = 'video' %}
-    {% endif %}
-    
-    <p class="post-link"><span>{{ post.date | date: "%m/%d" }} <span class="star">&#x2605;</span></span>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {% if badge %}<span class="post-badge">{{badge}}</span>{% endif %}
-    </p>
-    
-{% endfor %}

@@ -1,46 +1,9 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>{% if page.title %}{{ page.title }} - Justin Voss{% else %}Justin Voss{% endif %}</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/bigfoot-default.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/video-js.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/justinvoss.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/justinvoss-video-js.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/code.css">
-    
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/js/bigfoot.min.js"></script>
-    <script type="text/javascript">
-        $.bigfoot();
-    </script>
-    
-    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-    
-    <link rel="alternate" type="application/atom+xml" href="/atom.xml">
-    
-    <meta name="author" value="Justin Voss">
-    
-    <!-- OpenID stuff: -->
-    <link rel="openid.server" href="http://www.myopenid.com/server" />
-    <link rel="openid.delegate" href="http://durandal2005.myopenid.com/" />
-    <link rel="openid2.local_id" href="http://durandal2005.myopenid.com" />
-    <link rel="openid2.provider" href="http://www.myopenid.com/server" />
-    <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=durandal2005.myopenid.com" />
-    
-    {% include ga.html %}
-</head>
-<body class="video-page">
-
-<div id="header">
-    <div class="page">
-        <h1 id="logo"><a href="/">Justin Voss.com</a></h1>
-    </div>
-</div>
+---
+layout: default
+extra_css: [ "video-js.min.css", "justinvoss-video-js.css" ]
+final_js:  [ "video.min.js" ]
+body_class: "video-page"
+---
 
 {% assign video_padding = page.video.height | div: page.video.width | times: 100 | round %}
 
@@ -71,10 +34,3 @@
     {{ content }}
   </div>
 </div>
-
-{% include footer.html %}
-
-<script src="/static/js/video.min.js"></script>
-
-</body>
-</html>

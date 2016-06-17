@@ -8,6 +8,9 @@
     <title>{% if page.title %}{{ page.title }} - Justin Voss{% else %}Justin Voss{% endif %}</title>
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bigfoot-default.css">
+    {% for css in layout.extra_css %}
+    <link rel="stylesheet" type="text/css" href="/static/css/{{ css }}">
+    {% endfor %}
     <link rel="stylesheet" type="text/css" href="/static/css/justinvoss.css">
     <link rel="stylesheet" type="text/css" href="/static/css/code.css">
     
@@ -32,7 +35,7 @@
     
     {% include ga.html %}
 </head>
-<body>
+<body{% if layout.body_class %} class="{{ layout.body_class }}"{% endif %}>
 
 <div id="header">
     <div class="page">
@@ -40,11 +43,13 @@
     </div>
 </div>
 
-<div class="page">
-    {{ content }}
-</div>
+{{ content }}
 
 {% include footer.html %}
+
+{% for js in layout.final_js %}
+<script src="/static/js/{{ js }}"></script>
+{% endfor %}
 
 </body>
 </html>
