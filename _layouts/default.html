@@ -7,18 +7,21 @@
     
     <title>{% if page.title %}{{ page.title }} - Justin Voss{% else %}Justin Voss{% endif %}</title>
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/bigfoot-default.css">
-    {% for css in layout.extra_css %}
-    <link rel="stylesheet" type="text/css" href="/static/css/{{ css }}">
-    {% endfor %}
+    {% if layout.wants_bigfoot %}<link rel="stylesheet" type="text/css" href="/static/css/bigfoot-default.css">{% endif %}
+    {% if layout.wants_video %}
+    <link rel="stylesheet" type="text/css" href="/static/css/video-js.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/justinvoss-video-js.css">
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="/static/css/justinvoss.css">
     <link rel="stylesheet" type="text/css" href="/static/css/code.css">
     
+    {% if layout.wants_bigfoot %}
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/bigfoot.min.js"></script>
     <script type="text/javascript">
         $.bigfoot();
     </script>
+    {% endif %}
     
     <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
     
@@ -47,9 +50,9 @@
 
 {% include footer.html %}
 
-{% for js in layout.final_js %}
-<script src="/static/js/{{ js }}"></script>
-{% endfor %}
+{% if layout.wants_video %}
+<script src="/static/js/video.min.js"></script>
+{% endif %}
 
 </body>
 </html>
