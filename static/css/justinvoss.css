@@ -50,7 +50,7 @@ h3 {
   line-height: 44px /* baseline * 2 */;
 }
 
-p, pre, ul, hr, iframe {
+p, pre, ul, hr, iframe, .blockimage {
   margin-bottom: 22px  /* baseline */;
 }
 

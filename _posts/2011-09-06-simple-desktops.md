@@ -17,6 +17,6 @@ Buy it, rate it, tell your friends, <a href="mailto:justin@bleedingwolf.com">ema
 [gaker]: http://gregaker.net/
 [louis]: http://graphicpeel.com/
 
-<div>
+<div class="blockimage">
 <a href="http://bit.ly/simple-desktops-app"><img width="750" height="661" src="/static/post_assets/2011-09-06-simpledesktops.png" alt=""></a>
 </div>

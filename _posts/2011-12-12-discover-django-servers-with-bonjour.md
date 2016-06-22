@@ -29,7 +29,7 @@ domain, which stays constant even as your IP changes.
 
 You can find your machine's Bonjour hostname in the Sharing pane of System Preferences. 
 
-<div>
+<div class="blockimage">
 <img src="/static/post_assets/2011-12-12-sharing.png" alt="System Preferences - Sharing">
 </div>
 

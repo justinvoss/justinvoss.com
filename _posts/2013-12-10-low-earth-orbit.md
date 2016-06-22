@@ -18,7 +18,7 @@ I'll outline the life of a typical episode from concept to completion.
 [radioguide]: http://store.thisamericanlife.org/ProductDetails.asp?ProductCode=RADIO%3AANILLUSTRATEDGUIDE
 
 
-<div>
+<div class="blockimage">
 <img width="500" height="333"
   src="/static/post_assets/2013-12-low-earth-orbit/podcast-player.jpg"
   alt="Picture of a phone playing the Low Earth Orbit podcast"
@@ -105,7 +105,7 @@ Those PVC frames have been amazing. They were cheap and easy to build, and they
 deliver great results. The construction is simple enough: they're basically just 
 big rectangles with feet.
 
-<div>
+<div class="blockimage">
 <img width="500" height="667"
   src="/static/post_assets/2013-12-low-earth-orbit/studio-frames.jpg"
   alt="Image of PVC frame with blanket"
@@ -114,7 +114,7 @@ big rectangles with feet.
 
 The blankets are held in place with a few clamps at the top.
 
-<div>
+<div class="blockimage">
 <img width="500" height="375"
   src="/static/post_assets/2013-12-low-earth-orbit/studio-clamps.jpg"
   alt="Close-up of plastic clamp holding blanket"
@@ -245,7 +245,7 @@ of requests. But, they probably won't download the same data twice (or at least,
 they won't do that very often), so the "total bytes divided by filesize" trick 
 gets us in the ballpark.
 
-<div>
+<div class="blockimage">
 <img width="500" height="400"
   src="/static/post_assets/2013-12-low-earth-orbit/range-request-illustration.png"
   srcset="/static/post_assets/2013-12-low-earth-orbit/range-request-illustration@2x.png 2x"
