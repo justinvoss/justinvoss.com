@@ -52,6 +52,9 @@
 
 {% if layout.wants_video %}
 <script src="/static/js/video.min.js"></script>
+<script>
+videojs.options.flash.swf = '/static/swf/video-js.swf';
+</script>
 {% endif %}
 
 </body>
