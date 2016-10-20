@@ -283,3 +283,25 @@ body.video-page li a {
 body.video-page p a:hover {
   border-bottom: 1px solid rgba(245, 170, 125, 1.0);
 }
+
+body.video-page code {
+  background-color: #111;
+}
+
+body.video-page .footnote-content {
+  border-color: black;
+  background-color: black;
+}
+
+body.video-page .footnote-content .tooltip {
+  background: #333;
+  border-color: black;
+}
+
+body.video-page .footnote-main-wrapper {
+  background: #333;
+}
+
+body.video-page .footnote-content-wrapper {
+  background: #333;
+}
