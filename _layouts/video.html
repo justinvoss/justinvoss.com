@@ -5,7 +5,7 @@ wants_video:   True
 body_class: "video-page"
 ---
 
-{% assign video_padding = page.video.height | div: page.video.width | times: 100 | round %}
+{% assign video_padding = page.video.height | div: page.video.width | times: 100 | round: 2 %}
 
 <div class="video-wrapper" style="width: 100%; max-width: {{ page.video.width }}px;">
   
