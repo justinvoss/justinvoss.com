@@ -7,4 +7,4 @@ cd $PATH_TO_PROJECT
 
 rm -rf _site
 jekyll build
-rsync -v --compress --recursive --checksum --delete _site/ justinvoss@atlantis.bleedingwolf.com:justinvoss.com/www
+rsync -v --compress --recursive --checksum --delete _site/ justinvoss@barsoom.bleedingwolf.com:justinvoss.com/www
