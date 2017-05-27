@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Custom UIFont Gotchas
+guid: http://justinvoss.com/2011/09/23/custom-uifont-gotchas
 ---
 
 Custom fonts are fun! Getting custom fonts to work with `UIFont` isn't always as much fun.

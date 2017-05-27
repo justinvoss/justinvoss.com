@@ -18,7 +18,7 @@
    <title>{{ post.title }}</title>
    <link href="http://justinvoss.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://justinvoss.com{{ post.id }}</id>
+   <id>{{ post.guid }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

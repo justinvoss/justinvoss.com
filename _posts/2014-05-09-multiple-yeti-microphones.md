@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multiple Yeti Microphones
+guid: http://justinvoss.com/2014/05/09/multiple-yeti-microphones
 ---
 
 A few months ago, [I wrote about our process][bts] for recording [Low Earth Orbit][theshow].

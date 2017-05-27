@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Twenty Twelve
+guid: http://justinvoss.com/2013/01/22/twenty-twelve
 ---
 
 Last year, I tried to summarize 2011 in a ["By The Numbers"][numbers]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Talking About Fabric at CoMoRichWeb 
+guid: http://justinvoss.com/2011/09/01/fabric-comorichweb
 ---
 
 Last week, [Greg Aker][greg] and I gave a talk at [CoMoRichWeb][comorichweb] about [Fabric][],

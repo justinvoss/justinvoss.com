@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Simple Desktops for Mac
+guid: http://justinvoss.com/2011/09/06/simple-desktops
 ---
 
 I'm pumped to finally share what I've been working on for the Mac: [Simple Desktops][appstore].

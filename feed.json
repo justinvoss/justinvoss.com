@@ -11,7 +11,7 @@
         {
             "title": {{ post.title | jsonify }},
             "date_published": "{{ post.date | date_to_xmlschema }}",
-            "id": "http://justinvoss.com{{ post.id }}",
+            "id": "{{ post.guid }}",
             "url": "http://justinvoss.com{{ post.url }}",
             "content_html": {{ post.content | jsonify }}
         } {% unless forloop.last %},{% endunless %}

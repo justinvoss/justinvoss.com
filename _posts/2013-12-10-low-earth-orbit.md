@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Low Earth Orbit
+guid: http://justinvoss.com/2013/12/10/low-earth-orbit
 ---
 
 Roughly three months ago, I got together with my friends [Scott][] and [Steve][], 

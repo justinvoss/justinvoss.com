@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Intro to Delegation - Core Location and Address Book UI
+guid: http://justinvoss.com/2011/08/26/intro-to-delegation
 ---
 
 In [my article last week about target-action][target-action], I mentioned the delegate pattern as 

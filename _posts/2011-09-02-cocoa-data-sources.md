@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Creating and Consuming Data Sources in UIKit
+guid: http://justinvoss.com/2011/09/02/cocoa-data-sources
 ---
 
 By popular demand in the comments from [last week's article on delegates][last-week],

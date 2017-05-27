@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Skip Tunes for Mac
+guid: http://justinvoss.com/2012/02/13/skip-tunes
 ---
 
 Last week, my latest client project went live on the App Store. I'm thrilled to (somewhat belatedly) announce [Skip Tunes][website],

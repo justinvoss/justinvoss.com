@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Drone Day Afternoon
+guid: http://justinvoss.com/2016/07/03/drone-day-afternoon
 video:
   width: 960
   height: 540

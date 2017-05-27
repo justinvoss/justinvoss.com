@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Discover Django Servers with Bonjour
+guid: http://justinvoss.com/2011/12/12/discover-django-servers-with-bonjour
 ---
 
 Running a Django server that provides content to an iOS client is

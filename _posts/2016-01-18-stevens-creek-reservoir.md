@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Stevens Creek Reservoir
+guid: http://justinvoss.com/2016/01/18/stevens-creek-reservoir
 video:
   width: 960
   height: 540

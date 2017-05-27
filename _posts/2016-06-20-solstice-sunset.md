@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Solstice Sunset
+guid: http://justinvoss.com/2016/06/20/solstice-sunset
 video:
   width: 960
   height: 540
