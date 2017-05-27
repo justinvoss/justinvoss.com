@@ -1,0 +1,20 @@
+---
+---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Justin Voss",
+    "home_page_url": "http://justinvoss.com/",
+    "feed_url": "http://justinvoss.com/feed.json",
+    "icon": "http://justinvoss.com/apple-touch-icon-precomposed.png",
+    "items": [
+        {% for post in site.posts %}
+        {
+            "title": {{ post.title | jsonify }},
+            "date_published": "{{ post.date | date_to_xmlschema }}",
+            "id": "http://justinvoss.com{{ post.id }}",
+            "url": "http://justinvoss.com{{ post.url }}",
+            "content_html": {{ post.content | jsonify }}
+        } {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+}
