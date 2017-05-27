@@ -22,7 +22,7 @@ layout: default
   {% for post in site.posts %}
 
       {% capture this_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
-      {% if month != this_month | date: "%B" %}<h3>{{ this_month }}</h3>{% endif %}
+      {% if month != this_month %}<h3>{{ this_month }}</h3>{% endif %}
       {% assign month = this_month %}
     
       {% assign badge = nil %}
