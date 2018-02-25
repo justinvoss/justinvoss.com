@@ -5,9 +5,9 @@ The oft-neglected homepage of Justin Voss.
 
 ### Installing Dependencies
 
-Install the base components: Jekyll (3.1.6 or later) and Kramdown.
+Install Jekyll:
 
-    gem install jekyll kramdown
+    gem install jekyll pygments.rb
 
 Install Pygments for code highlighting.
 
