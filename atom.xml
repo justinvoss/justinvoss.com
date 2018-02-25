@@ -10,7 +10,7 @@
  <id>http://justinvoss.com/</id>
  <author>
    <name>Justin Voss</name>
-   <email>justin@bleedingwolf.com</email>
+   <email>{{ site.email }}</email>
  </author>
 
  {% for post in site.posts %}

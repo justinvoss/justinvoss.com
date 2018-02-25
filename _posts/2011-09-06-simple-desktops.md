@@ -11,7 +11,7 @@ all of it's content from [SimpleDesktops.com][website], impeccably curated by To
 
 Big props go out to [Greg Aker][gaker] for server monkeying and [Louis Harboe][louis] for the smashing icon.
 
-Buy it, rate it, tell your friends, <a href="mailto:justin@bleedingwolf.com">email me</a> with any feedback.
+Buy it, rate it, tell your friends, <a href="mailto:{{ site.email }}">email me</a> with any feedback.
 
 [appstore]: http://bit.ly/simple-desktops-app
 [website]: http://simpledesktops.com/
