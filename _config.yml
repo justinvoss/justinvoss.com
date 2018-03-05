@@ -6,3 +6,4 @@ highlighter:  pygments
 markdown:     kramdown
 
 email: justin@justinvoss.com
+copyright: "&copy; 2011&ndash;2018 Justin Voss"

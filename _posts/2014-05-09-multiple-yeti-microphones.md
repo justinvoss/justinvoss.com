@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Multiple Yeti Microphones
+blurb: "Yeti microphones need some configuration to play nice together."
 guid: http://justinvoss.com/2014/05/09/multiple-yeti-microphones
+comments_enabled: true
 ---
 
 A few months ago, [I wrote about our process][bts] for recording [Low Earth Orbit][theshow].

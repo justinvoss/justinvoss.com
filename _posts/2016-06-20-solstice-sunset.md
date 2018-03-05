@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Solstice Sunset
+blurb: "The sunset tonight was too good not to take the drone out and capture it from the air."
 guid: http://justinvoss.com/2016/06/20/solstice-sunset
 video:
   width: 960

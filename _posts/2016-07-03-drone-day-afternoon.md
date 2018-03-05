@@ -1,6 +1,7 @@
 ---
 layout: video
 title: Drone Day Afternoon
+blurb: "A quick drone flight through the park."
 guid: http://justinvoss.com/2016/07/03/drone-day-afternoon
 video:
   width: 960

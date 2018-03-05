@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Twenty Twelve
+blurb: "The year in review."
 guid: http://justinvoss.com/2013/01/22/twenty-twelve
 ---
 

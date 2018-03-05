@@ -2,6 +2,7 @@
 layout: post
 title: Cocoa's Target-Action Pattern
 guid: http://justinvoss.com/2011/08/19/cocoa-target-action
+comments_enabled: true
 ---
 
 Despite being a thin wrapper on top of C, Objective-C has dynamic features that make it

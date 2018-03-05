@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 wants_bigfoot: True
 wants_video:   True
 body_class: "video-page"
@@ -7,30 +7,21 @@ body_class: "video-page"
 
 {% assign video_padding = page.video.height | div: page.video.width | times: 100 | round: 2 %}
 
-<div class="video-wrapper" style="width: 100%; max-width: {{ page.video.width }}px;">
-  
-  <div class="video-aspect-ratio" style="position: relative; width: 100%; height: 0; padding-bottom: {{ video_padding }}%">
+<div class="video-aspect-ratio" style="position: relative; width: 100%; height: 0; padding-bottom: {{ video_padding }}%">
     
-    <video class="video-js vjs-default-skin"
-      poster="/static/post_assets/{{ page.video.poster }}"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" 
-      controls
-      preload="metadata"
-      data-setup="{}">
-        <source src="{{ page.video.url }}" type="video/mp4">
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a web browser that
-          <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-        </p>
-    </video>
-    
-  </div>
+  <video class="video-js vjs-default-skin"
+    poster="/static/post_assets/{{ page.video.poster }}"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" 
+    controls
+    preload="metadata"
+    data-setup="{}">
+      <source src="{{ page.video.url }}" type="video/mp4">
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that
+        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+  </video>
   
-  <div class="notes">
-    <div class="title">
-      <p class="date">{{ page.date | date: "%d %B %Y" }}</p>
-      <h1 class="page-title">{{ page.title }}</h1>
-    </div>
-    {{ content }}
-  </div>
 </div>
+
+{{ content }}

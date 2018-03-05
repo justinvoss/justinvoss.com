@@ -2,6 +2,7 @@
 layout: post
 title: Smoothing Data with Low-Pass Filters
 guid: http://justinvoss.com/2011/11/07/smoothing-data-with-low-pass-filters
+comments_enabled: true
 ---
 
 I should have paid more attention in my math classes.

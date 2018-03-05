@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Low Earth Orbit
+blurb: "A behind-the-scenes look at how we produce our podcast."
 guid: http://justinvoss.com/2013/12/10/low-earth-orbit
 ---
 
@@ -224,7 +225,7 @@ access their JSON API instead.
 [Qloudstat]: https://qloudstat.com/
 
 <p>
-  <math xmlns="http://www.w3.org/1998/Math/MathML" style="font-size: 1.2em">
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>estimated listens</mi>
       <mo>=</mo>
       <mfrac>

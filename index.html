@@ -2,39 +2,24 @@
 layout: default
 ---
 
-<div class="page">
-
-  <div id="introduction">
-    
-    <p>I'm a software developer at <a href="http://www.apple.com/">Apple</a>.
-
-    <p>I co-host <i><a href="http://lowearthorbit.fm/">Low Earth Orbit</a></i>, a podcast about movies,
-       <br>video games, and more.</p>
-
-    <div style="clear: both"></div>
-
-    <p>Email me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>,
-       <br>or follow me on <a href="http://twitter.com/justinvoss" rel="me">Twitter</a>.</p>
+<div class="l-columns">
+  <div class="l-column-pre-right">
+    {% include about-box.html %}
   </div>
 
-  {% assign month = '' %}
-
-  {% for post in site.posts %}
-
-      {% capture this_month %}{{ post.date | date: "%B %Y" }}{% endcapture %}
-      {% if month != this_month %}<h3>{{ this_month }}</h3>{% endif %}
-      {% assign month = this_month %}
-    
-      {% assign badge = nil %}
-      {% if post.layout == 'video' %}
-      {% assign badge = 'video' %}
-      {% endif %}
-    
-      <p class="post-link"><span>{{ post.date | date: "%m/%d" }} <span class="star">&#x2605;</span></span>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          {% if badge %}<span class="post-badge">{{badge}}</span>{% endif %}
-      </p>
-    
-  {% endfor %}
-
+  <div class="l-column-post-left">
+    <div class="l-box s-gray">
+      <div class="l-box-header">
+        <h1>Writings and Videos</h1>
+        <h2>Subscribe via <a href="/atom.xml">Atom</a> or <a href="/feed.json">JSON Feed</a>.</h2>
+      </div>
+      {% assign year = '' %}
+      {% for post in site.posts %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% if year != this_year %}<h3>{{ this_year }}</h3>{% endif %}
+        {% assign year = this_year %}
+        <p class="s-condensed"><a href="{{ post.url }}">{{ post.title }}</a>{% if post.blurb %} &mdash; {{ post.blurb }}{% endif %}</p>
+      {% endfor %}
+    </div>
+  </div>
 </div>

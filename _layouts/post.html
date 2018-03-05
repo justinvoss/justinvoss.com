@@ -4,44 +4,71 @@ wants_bigfoot: True
 wants_video:   False
 ---
 
-<div class="page">
-  
-  <div class="title">
-      <p class="date">{{ page.date | date: "%d %B %Y" }}</p>
-      <h1 class="page-title">{{ page.title }}</h1>
+<div class="l-columns">
+  <div class="l-column-pre-left">
+    <div class="l-box">
+      <div class="l-box-header s-gray">
+        <h1>{{ page.title }}</h1>
+        {%if page.date %}<h2>{{ page.date | date: "%B %d %Y" }}</h2>{% endif %}
+      </div>
+      
+      {{ content }}
+
+    </div>
+
+    {% if page.comments_enabled %}
+    <div class="l-box s-box-blue">
+      <div class="l-box-header s-gray">
+        <h1>Comments</h1>
+      </div>
+
+      <div id="disqus_thread"></div>
+      <div id="disqus_placeholder">
+        <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p></noscript>
+      </div>
+
+      <script type="text/javascript">
+      (function () {
+        var disqus_shortname = 'justinvoss';
+        // The following are highly recommended additional parameters. Remove the slashes in front to use.
+        // var disqus_identifier = 'unique_dynamic_id_1234';
+        window.disqus_url = 'http://justinvoss.com{{ page.url }}';
+      
+        var placeholderElement = document.getElementById('disqus_placeholder');
+      
+        var p = document.createElement('p');
+        placeholderElement.appendChild(p);
+
+        var a = document.createElement('a');
+        a.href = '#';
+        a.textContent = 'Click to load comments.';
+        p.appendChild(a);
+
+        a.addEventListener('click', function () {
+          placeholderElement.parentElement.removeChild(placeholderElement);
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+      })();
+      </script>
+    </div>
+    {% endif %}
+
   </div>
 
-  {{ content }}
+  <div class="l-column-post-right">
+    {% include about-box.html %}
 
-  <hr>
+    <div class="l-box s-gray s-box-blue">
+      <div class="l-box-header">
+        <h1>Other Recent Posts</h1>
+        <h2>Subscribe via <a href="/atom.xml">Atom</a> or <a href="/feed.json">JSON Feed</a>.</h2>
+      </div>
+      {% for post in site.posts limit:5 %}
+      <p class="s-condensed"><a href="{{ post.url }}">{{ post.title }}</a></p>
+      {% endfor %}
+    </div>
 
-  <div id="disqus_thread"></div>
-  <div id="disqus_placeholder">
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
-
-  <script type="text/javascript">
-    (function () {
-
-      var disqus_shortname = 'justinvoss';
-
-      // The following are highly recommended additional parameters. Remove the slashes in front to use.
-      // var disqus_identifier = 'unique_dynamic_id_1234';
-      window.disqus_url = 'http://justinvoss.com{{ page.url }}';
-    
-      var placeholderElement = document.getElementById('disqus_placeholder');
-    
-      var p = document.createElement('p');
-      p.textContent = 'Click to view comments.';
-      placeholderElement.appendChild(p);
-    
-      placeholderElement.addEventListener('click', function () {
-        placeholderElement.parentElement.removeChild(placeholderElement);
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      });
-    })();
-  </script>
-
 </div>
