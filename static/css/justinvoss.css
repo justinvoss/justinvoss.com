@@ -319,3 +319,40 @@ p.s-footnote {
 #disqus_placeholder p {
 	margin: 16px;
 }
+
+.l-site-header {
+	padding: 0 16px;
+	display: flex;
+	flex-flow: row;
+}
+
+.l-site-header-logo {
+	width: 64px;
+	height: 64px;
+	flex: 0 0 64px;
+	align-self: center;
+	background: url('/static/images/BurstLogo-sRGB.png') center center / 64px 64px no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+	.l-site-header-logo {
+		background-image: url('/static/images/BurstLogo-sRGB@2x.png');
+	}
+}
+
+@media (color-gamut: p3) {
+	.l-site-header-logo {
+		background-image: url('/static/images/BurstLogo-P3.png');
+	}
+}
+
+@media (color-gamut: p3) and (-webkit-min-device-pixel-ratio: 2) {
+	.l-site-header-logo {
+		background-image: url('/static/images/BurstLogo-P3@2x.png');
+	}
+}
+
+.l-site-header-text {
+	flex: 0 1 100%;
+	align-self: center;
+}
