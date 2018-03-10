@@ -157,14 +157,6 @@ figure {
 	margin: 17px 0;
 }
 
-p a.footnote-button {
-	border: none;
-}
-
-.footnote-content-wrapper p {
-	margin: 9px 0;
-}
-
 /* A 'blockimage' needs top and bottom margins equal to the text content. */
 .blockimage {
 	margin: 27px 0;
@@ -355,4 +347,34 @@ p.s-footnote {
 .l-site-header-text {
 	flex: 0 1 100%;
 	align-self: center;
+}
+
+/* The Bigfoot footnotes get messed up due to some earlier styling, so undo some of those here. */
+
+p a.footnote-button {
+	border: none;
+}
+
+aside.footnote-content {
+	background-color: inherit;
+	color: inherit;
+	padding: 0;
+	border-left: inherit;
+	font-style: inherit;
+}
+
+aside.footnote-content > :first-child {
+	margin-top: 0;
+}
+
+aside.footnote-content > :last-child {
+	margin-bottom: 0;
+}
+
+aside.footnote-content em {
+	font-style: inherit;
+}
+
+.footnote-content-wrapper p {
+	margin: 9px 0;
 }
