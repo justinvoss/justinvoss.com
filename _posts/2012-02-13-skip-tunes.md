@@ -17,15 +17,15 @@ Not long after launching, it even climbed to the #1 Music app in nine different 
 </div>
 
 [website]: http://skiptunes.com/
-[appstore]: http://bit.ly/skip-tunes-app
+[appstore]: https://itunes.apple.com/us/app/skip-tunes/id499695659
 
 [greg]: http://www.gregdougherty.com/
 
-[tuaw]: http://www.tuaw.com/2012/02/13/daily-mac-app-simple-skip-tunes-feels-like-it-should-be-part-of/
-[lifehacker]: http://lifehacker.com/5882964/skip-tunes-gives-you-menu-bar-access-to-controls-for-rdio-spotify-and-itunes
-[cnet]: http://howto.cnet.com/8301-11310_39-57373279-285/gain-easy-control-of-your-music-with-mac-app-skip-tunes/
-[cultofmac]: http://www.cultofmac.com/146543/skip-tunes-a-simple-way-to-control-itunes-or-spotify-from-your-macs-menu-bar-review/
-[macworld]: http://www.macworld.com/article/165456/2012/02/skip_tunes_is_a_simple_and_elegant_music_controller.html
+[tuaw]: https://www.engadget.com/2012/02/13/daily-mac-app-simple-skip-tunes-feels-like-it-should-be-part-of/
+[lifehacker]: https://lifehacker.com/5882964/skip-tunes-gives-you-menu-bar-access-to-controls-for-rdio-spotify-and-itunes
+[cnet]: https://www.cnet.com/how-to/gain-easy-control-of-your-music-with-mac-app-skip-tunes/
+[cultofmac]: https://www.cultofmac.com/146543/skip-tunes-a-simple-way-to-control-itunes-or-spotify-from-your-macs-menu-bar-review/
+[macworld]: https://www.macworld.com/article/1165456/skip_tunes_is_a_simple_and_elegant_music_controller.html
 
 
 Behind the Scenes
@@ -74,7 +74,7 @@ using `UIView`, `UIButton`, `UILabel`, and even `UIViewController` in addition t
 classes like `NSStatusItem` and `NSWorkspace`.
 
 [Chameleon]: http://chameleonproject.org/
-[The Iconfactory]: http://iconfactory.com/
+[The Iconfactory]: https://iconfactory.com/
 
 <div class="blockimage">
 <img width="749" height="330" src="/static/post_assets/2012-02-13-chameleon.png" alt="">

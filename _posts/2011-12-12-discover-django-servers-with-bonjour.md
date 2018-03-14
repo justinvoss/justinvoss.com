@@ -193,9 +193,9 @@ Apple's [Bonjour Overview][bonjour-adc] can take you an a deep dive
 into everything it has to offer.
 
 
-[bonjour-wiki]: http://en.wikipedia.org/wiki/Bonjour_(software)
+[bonjour-wiki]: https://en.wikipedia.org/wiki/Bonjour_(software)
 [runserver-bonjour]: https://gist.github.com/1452921
-[dns-sd-man]: http://developer.apple.com/library/mac/documentation/Darwin/Reference/Manpages/man1/dns-sd.1.html
+[dns-sd-man]: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/dns-sd.1.html
 [service-types]: http://www.dns-sd.org/ServiceTypes.html
 [rbserverlocator]: https://gist.github.com/1465170
-[bonjour-adc]: http://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/NetServices/Introduction.html
+[bonjour-adc]: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/NetServices/Introduction.html

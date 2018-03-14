@@ -75,7 +75,7 @@ Golden Gate Bridge and Sausalito, we visited our friend Tom at
 Facebook headquarters, and bumped into Mark Zuckerberg while we were
 there.
 
-[trips]: http://lagoesdomestic.wordpress.com/2012/06/16/friendly-faces/
+[trips]: https://lagoesdomestic.wordpress.com/2012/06/16/friendly-faces/
 
 We spent the 4th of **July** up in San Francisco, where it was so cold
 Laura had to buy a scarf: I've never been shivering on the Fourth
@@ -101,9 +101,9 @@ so we went up to San Francisco to see the Painted Ladies and drink at
 the [Monk's Kettle][kettle]. Laura went to Las Vegas for a Snap conference, and
 actually won money at the casino!
 
-[Samsara]: http://en.wikipedia.org/wiki/Samsara_(2011_film)
+[Samsara]: https://en.wikipedia.org/wiki/Samsara_(2011_film)
 [9k]: https://twitter.com/vossla/status/247532665346093057
-[kettle]: http://monkskettle.com
+[kettle]: https://monkskettle.com/
 
 Our first wedding anniversary was **October** 1st. We spent the
 weekend in wine country, and managed to not visit any wineries but did

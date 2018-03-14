@@ -35,7 +35,7 @@ When using the [Core Location][corelocation] framework, your code may start a re
 needs a while to warm up and connect to the satellites. Instead of blocking or polling the hardware,
 your code provides delegate methods that will be notified when the location data is ready to be used.
 
-[corelocation]: http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CoreLocation_Framework/_index.html
+[corelocation]: https://developer.apple.com/documentation/corelocation
 
 {% highlight objectivec %}
 - (void)viewDidAppear:(BOOL)animated
@@ -94,17 +94,15 @@ the [Address Book and Address Book UI frameworks][ab-docs]. The first is designe
 underlying contact data. The second is a set of pre-built views and interface elements for displaying,
 editing, and choosing contacts.
 
-[ab-docs]: http://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html
+[ab-docs]: https://developer.apple.com/library/content/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html
 
 When displaying the Address Book UI views, your code participates by setting itself as a delegate of the
 Apple-provided views. As the user makes their selections, your delegate will be notified and have the
 opportunity to affect the workflow.
 
 To prompt the user to choose a property (like phone number) for a contact, you have to create an `ABPeoplePickerNavigationController`
-and give it a delegate. In [Photo Dialer][photo-dialer]'s case, that delegate is a `AddContactDelegate`.
+and give it a delegate. In Photo Dialer's case, that delegate is a `AddContactDelegate`.
 Here's the actual code that one of the view controllers uses to present the UI:
-
-[photo-dialer]: http://bit.ly/photo-dialer-app
 
 {% highlight objectivec %}
 // a long time ago, in a view controller far, far away

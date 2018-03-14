@@ -16,7 +16,7 @@ I'll outline the life of a typical episode from concept to completion.
 [Scott]: https://twitter.com/scottstevenson
 [Steve]: https://twitter.com/marmon
 [lowearthorbit]: http://lowearthorbit.fm/
-[thisamericanlife]: http://www.thisamericanlife.org
+[thisamericanlife]: https://www.thisamericanlife.org/
 [radioguide]: http://store.thisamericanlife.org/ProductDetails.asp?ProductCode=RADIO%3AANILLUSTRATEDGUIDE
 
 
@@ -62,7 +62,7 @@ you might guess: being able to predict far in advance what topics we'll be
 covering helps make the whole production feel less rushed.
 
 [simcityreview]: http://lowearthorbit.fm/2013/09/03/simcity/
-[timetobeat]: http://www.howlongtobeat.com/game.php?id=9997
+[timetobeat]: https://howlongtobeat.com/game.php?id=9997
 [ythelastman]: http://lowearthorbit.fm/2013/10/15/y-the-last-man/
 
 
@@ -89,7 +89,7 @@ to get rid of echoes. You can shell out big money for fancy audio foam panels,
 but blankets and clothes work fine, too: even Randall Beach, "The Voice of NPR," 
 [did all his recordings in a coat closet][voiceofnpr].
 
-[voiceofnpr]: http://www.registercitizen.com/opinion/20131130/randall-beach-the-voice-of-npr-has-left-that-air-space-seeking-new-ventures
+[voiceofnpr]: https://www.registercitizen.com/opinion/article/RANDALL-BEACH-The-Voice-of-NPR-has-left-12023341.php
 
 We do three things to our room to get it into studio-mode:
 
@@ -149,7 +149,7 @@ It's possible to use software filters to remove background noise and echo, but
 it's much easier to just record better audio in the first place by moving to a 
 different room or setting up blankets.
 
-[dynamic range compression]: http://en.wikipedia.org/wiki/Dynamic_range_compression
+[dynamic range compression]: https://en.wikipedia.org/wiki/Dynamic_range_compression
 
 
 ## Publishing
@@ -167,7 +167,7 @@ To streamline the process, I wrote some shell scripts for creating episode files
 in Jekyll and publishing the site to the server. These scripts are basically 
 just wrappers around `curl` and `rsync` but sometimes that's all you need to be useful.
 
-[Jekyll]: http://jekyllrb.com
+[Jekyll]: https://jekyllrb.com/
 
 The MP3 files themselves are hosted on [Amazon S3][S3] because, well, everything 
 is on Amazon Web Services these days. And because it's reliable: we don't have 
@@ -175,8 +175,8 @@ to worry about it going down, or exceeding our bandwidth quota. And it's cheap.
 Hypothetically we could use a CDN like [CloudFront][] for even faster downloads, 
 but I don't think anyone is complaining about our download speed.
 
-[S3]: http://aws.amazon.com/s3/
-[CloudFront]: http://aws.amazon.com/cloudfront/
+[S3]: https://aws.amazon.com/s3/
+[CloudFront]: https://aws.amazon.com/cloudfront/
 
 We embed an inline audio player using [audio.js][]. This makes it easier for 
 website visitors who aren't subscribers to listen to individual episodes.

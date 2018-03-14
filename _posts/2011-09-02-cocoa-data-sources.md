@@ -25,8 +25,8 @@ UITableView that takes up most or all of screen. This pattern is so common, in f
 Apple includes a view controller class called [UITableViewController][] that does all this
 wiring for you!
 
-[UITableView]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableView_Class/Reference/Reference.html
-[UITableViewController]: http://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewController_Class/Reference/Reference.html
+[UITableView]: https://developer.apple.com/documentation/uikit/uitableview
+[UITableViewController]: https://developer.apple.com/documentation/uikit/uitableviewcontroller
 
 
 To provide data to the table view, the data source implements at least these methods:
@@ -123,7 +123,7 @@ is added manually with `addAnnotation:` or in bulk by setting the `annotations` 
 The right time to reach for the data source pattern is when performance is an issue and the data lends itself well to
 being loaded piece-by-piece.
 
-[mkmapview]: https://developer.apple.com/library/ios/documentation/MapKit/Reference/MKMapView_Class/MKMapView/MKMapView.html
+[mkmapview]: https://developer.apple.com/documentation/mapkit/mkmapview
 
 [^mapview]: According to Apple's documentation, you should add all the annotations at once, even if they're not on-screen.
     As the user moves the map around, the map view will notify the delegate and ask it to create the pin views as-needed.
@@ -143,10 +143,8 @@ a data source!
 
 The first step is to back away from the code and head for the whiteboard. Figure out your strategy for how the view
 will interact with the data source; this will be different for every situation. When Kyle and I wrote the grid view
-in [Kowabunga][], called `LOGridView`, we decided to use a data source because we knew that at some point we would want multiple pages of
+in Kowabunga, called `LOGridView`, we decided to use a data source because we knew that at some point we would want multiple pages of
 icons. Our strategy was to create a simplified version of the `UITableView` data source. The two methods are:
-
-[Kowabunga]: http://bit.ly/kowabunga-app
 
 
 {% highlight objectivec %}

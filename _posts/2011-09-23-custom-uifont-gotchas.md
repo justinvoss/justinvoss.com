@@ -23,4 +23,4 @@ You still have to do the regular "add your font file to the project and specify 
 Hopefully this saves you some time and frustration!
 
 
-[richard]: http://richardwarrender.com/2010/08/custom-fonts-on-ipad-and-iphone/
+[richard]: https://richardwarrender.com/2010/08/custom-fonts-on-ipad-and-iphone/

@@ -32,7 +32,7 @@ back to Blue, the manufacturer, for a firmware update.
 
 [bts]: http://justinvoss.com/2013/12/10/low-earth-orbit/
 [theshow]: http://lowearthorbit.fm/
-[yt]: http://youtube.com/lowearthshow
+[yt]: https://www.youtube.com/lowearthshow
 
 ## The Symptoms
 
@@ -51,7 +51,7 @@ only one microphone would show up in the list as an available device.
 Each one worked by itself, but if we tried to use both at once, only one
 would actually work.
 
-[yeti]: http://bluemic.com/yeti/
+[yeti]: http://www.bluedesigns.com/products/yeti/
 
 
 ## The Solution
@@ -89,7 +89,7 @@ Other models from Blue may also be affected; I've seen people online
 mention very similar issues when trying to use two [Snowball][snowball] microphones
 together, and I suspect it's the same underlying problem.
 
-[snowball]: http://bluemic.com/snowball/
+[snowball]: http://www.bluedesigns.com/products/snowball/
 
 This problem was surprisingly hard to track down, so hopefully this helps
 someone else figure out their microphone woes.

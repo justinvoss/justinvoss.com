@@ -8,13 +8,13 @@ Last week, [Greg Aker][greg] and I gave a talk at [CoMoRichWeb][comorichweb] abo
 a Python tool for automating sysadmin tasks over SSH. This is the first time at Comorichweb 
 that we had someone record video, (thank you [Robert Boyd][rboyd]) so enjoy the talk below.
 
-[greg]: http://www.gregaker.net/
+[greg]: https://www.gregaker.net/
 [comorichweb]: http://comorichweb.posterous.com/
-[Fabric]: http://fabfile.org/
-[rboyd]: http://twitter.com/rboyd
+[Fabric]: http://www.fabfile.org/
+[rboyd]: https://twitter.com/rboyd
 
 <div class="blockimage" style="position: relative; width: 100%; height: 0; padding-bottom: 56.26%; ">
-  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" src="http://player.vimeo.com/video/28457665?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" frameborder="0"></iframe>
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" src="https://player.vimeo.com/video/28457665?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" frameborder="0"></iframe>
 </div>
 
 Notes

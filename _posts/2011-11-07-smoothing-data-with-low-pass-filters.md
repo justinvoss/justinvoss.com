@@ -14,7 +14,7 @@ One handy trick is an algorithm called a [low-pass filter][].
 This basically takes a stream of data and filters out everything but the low-frequency signal.
 Effectively, this "smooths" out the data by taking out the jittery, high-frequency noise.
 
-[low-pass filter]: http://en.wikipedia.org/wiki/Low-pass_filter
+[low-pass filter]: https://en.wikipedia.org/wiki/Low-pass_filter
 
 Like I said before, my math skills are weak, but looking at the algorithmic implementation on
 Wikipedia it seems like it's basically a weighted average: some of the data is from the previously
@@ -56,7 +56,7 @@ The results should speak for themselves: the filtered data is a little slower to
 but moves smoothly and deliberately. The raw data jumps and twitches too much for comfort.
 
 <div class="blockimage" style="position: relative; width: 100%; height: 0; padding-bottom: 74.96%">
-  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" src="http://player.vimeo.com/video/31734175?portrait=0" frameborder="0" webkitAllowFullScreen="true" allowFullScreen="true"> </iframe>
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" src="https://player.vimeo.com/video/31734175?portrait=0" frameborder="0" webkitAllowFullScreen="true" allowFullScreen="true"> </iframe>
 </div>
 
 
