@@ -7,8 +7,4 @@ The oft-neglected homepage of Justin Voss.
 
 Install Jekyll:
 
-    gem install jekyll pygments.rb
-
-Install Pygments for code highlighting.
-
-    pip install pygments
+    gem install jekyll
