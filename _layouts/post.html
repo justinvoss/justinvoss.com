@@ -5,70 +5,34 @@ wants_video:   False
 ---
 
 <div class="l-columns">
-  <div class="l-column-pre-left">
-    <div class="l-box">
-      <div class="l-box-header s-gray">
-        <h1>{{ page.title }}</h1>
-        {%if page.date %}<h2>{{ page.date | date: "%B %d %Y" }}</h2>{% endif %}
-      </div>
-      
-      {{ content }}
-
-    </div>
-
+  <div class="l-column-left">
+    <section class="s-section-orange">
+      <article>
+        <div class="l-section-header">
+          <h1>{{ page.title }}</h1>
+          {%if page.date %}<p class="s-section-header-sub"><time datetime="{{ page.date }}">{{ page.date | date: "%B %e, %Y" }}</time></p>{% endif %}
+        </div><!-- .l-section-header -->
+        {{ content }}
+      </article>
+    </section>
     {% if page.comments_enabled %}
-    <div class="l-box s-box-blue">
-      <div class="l-box-header s-gray">
-        <h1>Comments</h1>
-      </div>
-
-      <div id="disqus_thread"></div>
-      <div id="disqus_placeholder">
-        <noscript><p>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></p></noscript>
-      </div>
-
-      <script type="text/javascript">
-      (function () {
-        var disqus_shortname = 'justinvoss';
-        // The following are highly recommended additional parameters. Remove the slashes in front to use.
-        // var disqus_identifier = 'unique_dynamic_id_1234';
-        window.disqus_url = 'http://justinvoss.com{{ page.url }}';
-      
-        var placeholderElement = document.getElementById('disqus_placeholder');
-      
-        var p = document.createElement('p');
-        placeholderElement.appendChild(p);
-
-        var a = document.createElement('a');
-        a.href = '#';
-        a.textContent = 'Click to load comments.';
-        p.appendChild(a);
-
-        a.addEventListener('click', function () {
-          placeholderElement.parentElement.removeChild(placeholderElement);
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        });
-      })();
-      </script>
-    </div>
+      {% include disqus.html %}
     {% endif %}
+  </div><!-- .l-column-left -->
+  <div class="l-column-right">
 
-  </div>
-
-  <div class="l-column-post-right">
     {% include about-box.html %}
 
-    <div class="l-box s-gray s-box-blue">
-      <div class="l-box-header">
-        <h1>Other Recent Posts</h1>
-        <h2>Subscribe via <a href="/atom.xml">Atom</a> or <a href="/feed.json">JSON Feed</a>.</h2>
-      </div>
+    <section class="s-section-blue s-invert">
+      <div class="l-section-header">
+        <h3>Other Recent Posts</h3>
+        <p class="s-section-header-sub">Subscribe via <a href="/atom.xml">Atom</a> or <a href="/feed.json">JSON Feed</a>.</p>
+      </div><!-- .l-section-header -->
+      <ul>
       {% for post in site.posts limit:5 %}
-      <p class="s-condensed"><a href="{{ post.url }}">{{ post.title }}</a></p>
+        <p><a href="{{ post.url }}">{{ post.title }}</a>{% if post.blurb %} &mdash; {{ post.blurb }}{% endif %}</p>
       {% endfor %}
-    </div>
-
-  </div>
-</div>
+      </ul>
+    </section>
+  </div><!-- .l-column-right -->
+</div><!-- .l-columns -->

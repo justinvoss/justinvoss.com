@@ -1,272 +1,24 @@
 
 body {
 	background-color: #E6E4E1;
-	font-family: "Helvetica", sans-serif;
-	color: #333333;
+	color: #333;
+	font: 14px "Helvetica", sans-serif;
+	line-height: 21px;
+	margin-bottom: 2em;
 }
 
 math {
-	font-family: "Helvetica", sans-serif;
-}
-
-h1 {
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 18px;
-	margin: 18px 16px 9px 16px;
-}
-
-h2 {
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
-	margin: 45px 16px 9px 16px;
-}
-
-h3 {
-	color: #9B9B9B;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 18px;
-	margin: 18px 0 9px 0;
-	text-transform: uppercase;
-}
-
-hr {
-	border-top: 1px solid #777777;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	margin: 45px;
-}
-
-p, li
-{
-	font-size: 14px;
-	line-height: 27px;
-}
-
-p {
-	margin: 27px 16px;
-}
-
-li {
-	margin: 0 16px;
-}
-
-li p {
-	margin: 0 0 16px 0;
-}
-
-ul li {
-	list-style: none;
-	position: relative;
-	margin-left: 48px;
-	margin-bottom: 9px;
-}
-
-ol {
-	list-style: decimal outside;
-}
-
-ol li {
-	margin-bottom: 9px;
-	margin-left: 48px;
-}
-
-ul li:before {
-	/* Unfortunately there's no CSS property to change the color of the list bullet. */
-	content: "\2022";
-	color: #777777;
-	font-size: 28px;
-	position: absolute;
-	left: -16px;
-}
-
-math {
+	font: 14px "Helvetica", sans-serif;
 	display: block;
-	font-size: 14px;	
 }
 
-math mrow {
-	padding: 4px 0;
-}
+math mrow { padding: 4px 0; }
+math mo { padding: 0 6px; }
 
-math mo {
-	padding: 0 6px;
-}
-
-blockquote {
-	background-color: #F5F5F5;
-	color: #555555;
-	padding: 1px 16px; /* 1px top / bottom padding to avoid margin collapsing. */
-	border-left: 4px solid #AAAAAA;
-	font-style: italic;
-}
-
-blockquote > :first-child {
-	margin-top: 27px;
-}
-
-blockquote > :last-child {
-	margin-bottom: 27px;
-}
-
-blockquote em {
-	font-style: normal;
-}
-
-aside {
-	background-color: #FFEBCC;
-	color: #AF6206;
-	padding: 1px 16px; /* 1px top / bottom padding to avoid margin collapsing. */
-	border-left: 4px solid #AF6206;
-	font-style: italic;
-}
-
-aside > :first-child {
-	margin-top: 27px;
-}
-
-aside > :last-child {
-	margin-bottom: 27px;
-}
-
-aside em {
-	font-style: normal;
-}
-
-pre {
-	background-color: #444444;
-	color: white;
-	padding: 16px;
-	overflow-x: scroll
-}
-
-p code,
-li code
-{
-	background-color: #444444;
-	color: white;
-	padding: 2px 4px;
-	margin: 0 2px;
-	border-radius: 2px;
-}
-
-figure {
-	margin: 17px 0;
-}
-
-/* A 'blockimage' needs top and bottom margins equal to the text content. */
-.blockimage {
-	margin: 27px 0;
-}
-
-.blockimage img {
-	width: 100%;
-	height: auto;
-}
-
-a:link {
-	color: #0079AF;
-	text-decoration: none;
-	border-bottom: 2px solid #0079AF;
-}
-
-a:visited { /* FIXME */
-	color: #0079AF;
-	border-color: #0079AF;
-}
-
-a:hover { /* FIXME */
-	color: #11B3FC;
-	border-color: #5CC9FF;
-}
-
+a:link { color: #0079AF; }
+a:visited { color: #0079AF; }
+a:hover { color: #11B3FC; }
 /* TODO: a:active */
-
-a code {
-	background-color: transparent;
-	color: inherit;
-	margin: 0;
-	padding: 0;
-}
-
-.blockimage a {
-	border: none;
-}
-
-.l-box {
-	background-color: white;
-	margin: 32px 16px 0 16px;
-	padding: 1px 0; /* 1px top / bottom padding to avoid margin collapsing. */
-	max-width: 700px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
-	border-radius: 6px;
-	border-top: 4px solid #FC9011;
-}
-
-.s-box-blue {
-	border-color: #11B3FC;
-}
-
-.l-box h1,
-.l-box h2,
-.l-box h3
-{
-	margin-left: 16px;
-	margin-right: 16px;
-}
-
-.l-box-header {
-	background-color: white;
-	padding: 16px 0;
-}
-
-.l-box > :first-child {
-	margin-top: -1px;
-	border-top-right-radius: 6px;
-	border-top-left-radius: 6px;
-}
-
-.l-box > :last-child {
-	border-bottom-right-radius: 6px;
-	border-bottom-left-radius: 6px;	
-}
-
-.l-box-header h1,
-.l-box-header h2
-{
-	margin-top: 0;
-}
-
-.l-box-header h1 a {
-	color: inherit;
-	border: none;
-}
-
-.l-box-header h2 {
-	color: #9B9B9B;
-	font-weight: normal;
-}
-
-.l-box-header :last-child {
-	margin-bottom: 0;
-}
-
-.s-gray {
-	background-color: #F5F5F5;
-}
-
-p.s-condensed {
-	line-height: 27px;
-	margin: 9px 16px;
-}
-
-p.s-footnote {
-	color: #A39C91;
-	margin: 16px 32px;
-}
 
 .l-columns {
 	padding: 1px 0 1px 0; /* avoid margin collapse, so the two columns have the same top edge */
@@ -280,36 +32,184 @@ p.s-footnote {
 		display: flex;
 	}
 
-	.l-column-pre-left,
-	.l-column-post-left {
+	.l-column-left {
 		flex: 1;
-	}
-
-	.l-column-post-right,
-	.l-column-pre-right {
-		flex: 0 1 384px;
-	}
-
-	.l-column-pre-right {
-		order: 1;
-	}
-
-	.l-column-post-left {
 		order: 0;
 	}
 
-	.l-footer {
-		margin: 0 auto;
-		max-width: 1100px;
+	.l-column-right {
+		flex: 0 1 384px;
+		order: 1;
 	}
 }
 
-#disqus_thread {
+section {
+	background-color: white;
+	margin: 32px 16px 0 16px;
+	padding: 1px 0;
+	max-width: 700px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+	border-radius: 6px;
+}
+
+.s-section-orange {
+	border-top: 4px solid #FC9011;
+}
+
+.s-section-blue {
+	border-top: 4px solid #11B3FC;
+}
+
+section .l-section-header {
+	background-color: #F5F5F5;
+	/* The rounded corners seem to produce a 1px gap. */
+	margin-top: -1px;
+	/* Any background color will clip the curve of the top border. */
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	padding: 16px 0;
+}
+
+section.s-invert {
+	background-color: #F5F5F5;
+}
+
+section.s-invert .l-section-header {
+	background: #fff;
+}
+
+section .l-section-header h3 {
+	font-size: 18px;
+	line-height: 18px;
 	margin: 0 16px;
 }
 
-#disqus_placeholder p {
-	margin: 16px;
+.s-section-header-sub {
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 16px;
+	color: #9B9B9B;
+}
+
+.l-section-header h3 + .s-section-header-sub {
+	margin-top: 14px;
+}
+
+section p {
+	margin: 0.5em 16px;
+}
+
+article p {
+	margin: 1.5em 16px;
+}
+
+article h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	margin: 0 16px;
+	font-weight: bold;
+}
+
+article h2 {
+	font-size: 1.5em;
+	line-height: 1.0em;
+	margin-top: 2em;
+	margin-bottom: 0em;
+	font-weight: bold;
+	color: #FC9011;
+	border-left: 4px solid #FC9011;
+	padding: 12px 0 12px 12px;
+}
+
+article h3 {
+	font-size: 16px;
+  	line-height: 21px;
+	margin-top: 2em;
+	margin-bottom: 0em;
+	color: #9B9B9B;
+	border-left: 4px solid #9B9B9B;
+	padding: 0 0 0 12px;
+	text-transform: uppercase;
+}
+
+article .blockimage {
+	margin: 1.5em 0;
+}
+
+article .blockimage img {
+	width: 100%;
+	height: auto;
+}
+
+article p code,
+article li code {
+	background-color: #eee;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 2px;
+}
+
+article pre {
+	background-color: #444444;
+	color: white;
+	padding: 16px;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	line-height: 16px;
+}
+
+article ol,
+article ul {
+	padding-left: 48px;
+	padding-right: 16px;
+	margin: 1.5em 0;
+}
+article ol { list-style: decimal outside; }
+article ul { list-style: disc; }
+
+article li {
+	margin: 0.5em 0;
+}
+
+article li p {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+article blockquote {
+	background-color: #F5F5F5;
+	color: #555555;
+	padding: 1px 16px; /* 1px top / bottom padding to avoid margin collapsing. */
+	border-left: 4px solid #AAAAAA;
+	font-style: italic;
+}
+
+article blockquote > :first-child { margin-top: 1em; }
+article blockquote > :last-child { margin-bottom: 1em; }
+
+article blockquote em,
+article blockquote code {
+	font-style: normal;
+}
+
+article blockquote h2,
+article blockquote h3 {
+	color: inherit;
+	border: none;
+	padding: 0;
+	margin: 0 16px;
+}
+
+article blockquote code {
+	background-color: #ddd;
+}
+
+hr {
+	border-top: 1px solid #e0e0e0;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	margin: 3em;
 }
 
 .l-site-header {
@@ -347,6 +247,75 @@ p.s-footnote {
 .l-site-header-text {
 	flex: 0 1 100%;
 	align-self: center;
+}
+
+.s-site-header-title {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	margin: 0 16px 9px 16px;
+}
+
+.s-site-header-title a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.s-site-header-subtitle {
+	color: #9B9B9B;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	margin: 0 16px ;
+}
+
+.s-site-copyright {
+	color: #bcb6ae;
+	font-size: 0.8em;
+	text-align: right;
+}
+
+article aside {
+	background-color: #FFEBCC;
+	color: #AF6206;
+	padding: 1px 16px; /*1px top / bottom padding to avoid margin collapsing.*/
+	border-left: 4px solid #AF6206;
+	font-style: italic;
+}
+
+article aside h2,
+article aside h3 {
+	color: inherit;
+	border: none;
+	padding: 0;
+	margin: 0 16px;
+}
+
+article aside > :first-child { margin-top: 1em; }
+article aside > :last-child { margin-bottom: 1em; }
+
+article aside em {
+	font-style: normal;
+}
+
+.s-post-list {
+	margin-bottom: 1.5em;
+}
+
+.s-post-list p {
+	margin: 0.5em 16px;
+}
+
+.s-post-list h3 {
+	border-color: transparent;
+}
+
+#disqus_thread {
+	margin: 0 16px;
+}
+
+#disqus_placeholder p {
+	margin: 16px;
 }
 
 /* The Bigfoot footnotes get messed up due to some earlier styling, so undo some of those here. */
