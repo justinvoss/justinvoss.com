@@ -105,30 +105,24 @@ article p {
 
 article h1 {
 	font-size: 2em;
-	line-height: 1.5em;
-	margin: 0 16px;
+	line-height: 1.1em;
+	margin: 0 16px 8px 16px;
 	font-weight: bold;
 }
 
 article h2 {
 	font-size: 1.5em;
-	line-height: 1.0em;
-	margin-top: 2em;
-	margin-bottom: 0em;
+	line-height: 1.1em;
+	margin: 2em 16px 0 16px;
 	font-weight: bold;
 	color: #FC9011;
-	border-left: 4px solid #FC9011;
-	padding: 12px 0 12px 12px;
 }
 
 article h3 {
 	font-size: 16px;
   	line-height: 21px;
-	margin-top: 2em;
-	margin-bottom: 0em;
+	margin: 2em 16px 0 16px;
 	color: #9B9B9B;
-	border-left: 4px solid #9B9B9B;
-	padding: 0 0 0 12px;
 	text-transform: uppercase;
 }
 
@@ -179,8 +173,7 @@ article li p {
 article blockquote {
 	background-color: #F5F5F5;
 	color: #555555;
-	padding: 1px 16px; /* 1px top / bottom padding to avoid margin collapsing. */
-	border-left: 4px solid #AAAAAA;
+	padding: 1px; /* 1px padding to avoid margin collapsing. */
 	font-style: italic;
 }
 
@@ -278,8 +271,7 @@ hr {
 article aside {
 	background-color: #FFEBCC;
 	color: #AF6206;
-	padding: 1px 16px; /*1px top / bottom padding to avoid margin collapsing.*/
-	border-left: 4px solid #AF6206;
+	padding: 1px; /*1px padding to avoid margin collapsing.*/
 	font-style: italic;
 }
 
