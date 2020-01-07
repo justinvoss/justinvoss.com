@@ -1,7 +1,5 @@
 
 body {
-	background-color: #E6E4E1;
-	color: #333;
 	font: 14px "Helvetica", sans-serif;
 	line-height: 21px;
 	margin-bottom: 2em;
@@ -14,11 +12,6 @@ math {
 
 math mrow { padding: 4px 0; }
 math mo { padding: 0 6px; }
-
-a:link { color: #0079AF; }
-a:visited { color: #0079AF; }
-a:hover { color: #11B3FC; }
-/* TODO: a:active */
 
 .l-columns {
 	padding: 1px 0 1px 0; /* avoid margin collapse, so the two columns have the same top edge */
@@ -44,7 +37,6 @@ a:hover { color: #11B3FC; }
 }
 
 section {
-	background-color: white;
 	margin: 32px 16px 0 16px;
 	padding: 1px 0;
 	max-width: 700px;
@@ -53,29 +45,22 @@ section {
 }
 
 .s-section-orange {
-	border-top: 4px solid #FC9011;
+	border-top-width: 4px;
+	border-top-style: solid;
 }
 
 .s-section-blue {
-	border-top: 4px solid #11B3FC;
+	border-top-width: 4px;
+	border-top-style: solid;
 }
 
 section .l-section-header {
-	background-color: #F5F5F5;
 	/* The rounded corners seem to produce a 1px gap. */
 	margin-top: -1px;
 	/* Any background color will clip the curve of the top border. */
 	border-top-right-radius: 6px;
 	border-top-left-radius: 6px;
 	padding: 16px 0;
-}
-
-section.s-invert {
-	background-color: #F5F5F5;
-}
-
-section.s-invert .l-section-header {
-	background: #fff;
 }
 
 section .l-section-header h3 {
@@ -88,7 +73,6 @@ section .l-section-header h3 {
 	font-size: 16px;
 	line-height: 18px;
 	margin: 0 16px;
-	color: #9B9B9B;
 }
 
 .l-section-header h3 + .s-section-header-sub {
@@ -115,14 +99,12 @@ article h2 {
 	line-height: 1.1em;
 	margin: 2em 16px 0 16px;
 	font-weight: bold;
-	color: #FC9011;
 }
 
 article h3 {
 	font-size: 16px;
   	line-height: 21px;
 	margin: 2em 16px 0 16px;
-	color: #9B9B9B;
 	text-transform: uppercase;
 }
 
@@ -137,15 +119,12 @@ article .blockimage img {
 
 article p code,
 article li code {
-	background-color: #eee;
 	padding: 2px 4px;
 	margin: 0 2px;
 	border-radius: 2px;
 }
 
 article pre {
-	background-color: #444444;
-	color: white;
 	padding: 16px;
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -171,8 +150,6 @@ article li p {
 }
 
 article blockquote {
-	background-color: #F5F5F5;
-	color: #555555;
 	padding: 1px; /* 1px padding to avoid margin collapsing. */
 	font-style: italic;
 }
@@ -187,14 +164,9 @@ article blockquote code {
 
 article blockquote h2,
 article blockquote h3 {
-	color: inherit;
 	border: none;
 	padding: 0;
 	margin: 0 16px;
-}
-
-article blockquote code {
-	background-color: #ddd;
 }
 
 hr {
@@ -250,12 +222,10 @@ hr {
 }
 
 .s-site-header-title a {
-	color: inherit;
 	text-decoration: none;
 }
 
 .s-site-header-subtitle {
-	color: #9B9B9B;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: normal;
@@ -263,21 +233,17 @@ hr {
 }
 
 .s-site-copyright {
-	color: #bcb6ae;
 	font-size: 0.8em;
 	text-align: right;
 }
 
 article aside {
-	background-color: #FFEBCC;
-	color: #AF6206;
 	padding: 1px; /*1px padding to avoid margin collapsing.*/
 	font-style: italic;
 }
 
 article aside h2,
 article aside h3 {
-	color: inherit;
 	border: none;
 	padding: 0;
 	margin: 0 16px;
@@ -317,8 +283,6 @@ p a.footnote-button {
 }
 
 aside.footnote-content {
-	background-color: inherit;
-	color: inherit;
 	padding: 0;
 	border-left: inherit;
 	font-style: inherit;
@@ -338,4 +302,203 @@ aside.footnote-content em {
 
 .footnote-content-wrapper p {
 	margin: 9px 0;
+}
+
+/**************** Light-Mode Colors ****************/
+
+body {
+	background-color: #e6e4e1;
+	color: #333;
+}
+
+a:link { color: #0079af; }
+a:visited { color: #0079af; }
+a:hover { color: #11b3fc; }
+/* TODO: a:active */
+
+.s-section-orange {
+	border-color: #fc9011;
+}
+
+.s-section-blue {
+	border-color: #11b3fc;
+}
+
+section {
+	background-color: white;
+}
+
+section .l-section-header {
+	background-color: #f5f5f5;
+}
+
+section.s-invert {
+	background-color: #f5f5f5;
+}
+
+section.s-invert .l-section-header {
+	background: #fff;
+}
+
+.s-section-header-sub {
+	color: #9b9b9b;
+}
+
+article h2 {
+	color: #fc9011;
+}
+
+article h3 {
+	color: #9b9b9b;
+}
+
+article p code,
+article li code {
+	background-color: #eee;
+}
+
+article pre {
+	background-color: #444444;
+	color: white;
+}
+
+article blockquote {
+	background-color: #f5f5f5;
+	color: #555555;
+}
+
+article blockquote code {
+	background-color: #ddd;
+}
+
+article blockquote h2,
+article blockquote h3 {
+	color: inherit;
+}
+
+article aside h2,
+article aside h3 {
+	color: inherit;
+}
+
+.s-site-header-title a {
+	color: inherit;
+}
+
+.s-site-header-subtitle {
+	color: #9b9b9b;
+}
+
+.s-site-copyright {
+	color: #bcb6ae;
+}
+
+article aside {
+	background-color: #ffebcc;
+	color: #af6206;
+}
+
+aside.footnote-content {
+	background-color: inherit;
+	color: inherit;
+}
+
+/**************** Dark-Mode Colors ****************/
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #000;
+		color: #fff;
+	}
+
+	a:link { color: #1fbaff; }
+	a:visited { color: #2fbfff; }
+	a:hover { color: #11b3fc; }
+
+	.s-section-orange {
+		border-color: #fc9011;
+	}
+
+	.s-section-blue {
+		border-color: #11b3fc;
+	}
+
+	section {
+		background-color: rgb(72, 72, 72);
+	}
+
+	section .l-section-header {
+		background-color: #353535;
+	}
+
+	section.s-invert {
+		background-color: #353535;
+	}
+
+	section.s-invert .l-section-header {
+		background: rgb(72, 72, 72);
+	}
+
+	.s-section-header-sub {
+		color: #d2d2d2;
+	}
+
+	article h2 {
+		color: #fda33a;
+	}
+
+	article h3 {
+		color: #9b9b9b;
+	}
+
+	article p code,
+	article li code {
+		background-color: #676767;
+	}
+
+	article pre {
+		background-color: #2b2b2b;
+		color: white;
+	}
+
+	article blockquote {
+		background-color: #2b2b2b;
+		color: #eeeeee;
+	}
+
+	article blockquote code {
+		background-color: #5e5e5e;
+	}
+
+	article blockquote h2,
+	article blockquote h3 {
+		color: inherit;
+	}
+
+	article aside h2,
+	article aside h3 {
+		color: inherit;
+	}
+
+	.s-site-header-title a {
+		color: inherit;
+	}
+
+	.s-site-header-subtitle {
+		color: #9b9b9b;
+	}
+
+	.s-site-copyright {
+		color: #bcb6ae;
+	}
+
+	article aside {
+		background-color: #492c00;
+		color: #f79014;
+	}
+
+	aside.footnote-content {
+		background-color: inherit;
+		color: inherit;
+	}
 }
