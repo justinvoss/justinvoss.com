@@ -6,7 +6,7 @@ guid: http://justinvoss.com/2016/06/20/solstice-sunset
 video:
   width: 960
   height: 540
-  url: http://justinvoss.com/static/videos/2016-06-20-solstice-sunset.mov
+  url: https://justinvoss.com/static/videos/2016-06-20-solstice-sunset.mov
   poster: 2016-06-20-solstice-sunset/poster.jpg
 ---
 

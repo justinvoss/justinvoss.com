@@ -6,7 +6,7 @@ guid: http://justinvoss.com/2016/07/03/drone-day-afternoon
 video:
   width: 960
   height: 540
-  url: http://justinvoss.com/static/videos/2016-07-03-drone-day-afternoon.mov
+  url: https://justinvoss.com/static/videos/2016-07-03-drone-day-afternoon.mov
   poster: 2016-07-03-drone-day-afternoon/poster.jpg
 ---
 

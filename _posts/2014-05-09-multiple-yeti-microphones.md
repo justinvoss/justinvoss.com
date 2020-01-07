@@ -30,7 +30,7 @@ on the same Mac.**
 The longer version: it is possible, but you'll need to send one of the mics
 back to Blue, the manufacturer, for a firmware update.
 
-[bts]: http://justinvoss.com/2013/12/10/low-earth-orbit/
+[bts]: https://justinvoss.com/2013/12/10/low-earth-orbit/
 [theshow]: http://lowearthorbit.fm/
 [yt]: https://www.youtube.com/lowearthshow
 

@@ -6,7 +6,7 @@ guid: http://justinvoss.com/2016/01/18/stevens-creek-reservoir
 video:
   width: 960
   height: 540
-  url: http://justinvoss.com/static/videos/2016-01-18-stevens-creek-reservoir.mov
+  url: https://justinvoss.com/static/videos/2016-01-18-stevens-creek-reservoir.mov
   poster: 2016-01-18-stevens-creek-reservoir/poster.jpg
 ---
 

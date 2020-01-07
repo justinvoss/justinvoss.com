@@ -9,7 +9,7 @@ this week's article is about data sources.
 I'll talk about what a data source is, why UIKit uses them, and how you can write
 your own views that consume data sources.
 
-[last-week]: http://justinvoss.com/2011/08/26/intro-to-delegation/
+[last-week]: https://justinvoss.com/2011/08/26/intro-to-delegation/
 
 
 What is A Data Source?

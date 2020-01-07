@@ -10,7 +10,7 @@ article. I thought I would do the same for 2012, but when I typed up
 the list it was underwhelming. An entire year is a lot more complex 
 than the books I read or video games I played.
 
-[numbers]: http://justinvoss.com/2011/12/31/2011-by-the-numbers/
+[numbers]: https://justinvoss.com/2011/12/31/2011-by-the-numbers/
 
 Instead of giving you numbers, I want to tell the story of the whole
 year, month-by-month. Brace yourself, it's going to be a long post.
@@ -31,7 +31,7 @@ released on the Mac App Store and was well-received. Laura left her
 job at the non-profit Marine Parents, and we both travelled to
 California for the first time, for my on-site interview at Apple.
 
-[Skip Tunes]: http://justinvoss.com/2012/02/13/skip-tunes/
+[Skip Tunes]: https://justinvoss.com/2012/02/13/skip-tunes/
 
 By **March** we were already making plans to move to California; we
 started packing things up around the apartment and tried to
