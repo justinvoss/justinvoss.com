@@ -38,7 +38,14 @@ See how the images move around in parallax?
 If you visit the same page on your smartphone, it can even use the accelerometer
 in your device to make the images move.
 
+**Update:** It appears the mobile version no longer uses the accelerometer. Darn!
+
 [gh404]: https://github.com/404
+
+<div style="position:relative; width: 100%; height: 0; padding-bottom: calc(41.49% + 44px)">
+  <iframe src="https://gfycat.com/ifr/WarlikeLinearCapybara" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;" allowfullscreen>
+  </iframe>
+</div>
 
 I thought it would be neat to replicate the effect in a native iOS app.
 Grabbing data from the accelerometer and shifting the views around is pretty
