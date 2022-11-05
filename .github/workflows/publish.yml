@@ -6,7 +6,7 @@ jobs:
     name: Publish
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: docker build
         run: docker build -t justinvoss.com .
       - name: jekyll build
@@ -16,6 +16,5 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
-          name: id_ed25519
       - name: rsync
         run: rsync -v --compress --recursive --checksum --delete _site/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PATH }}
