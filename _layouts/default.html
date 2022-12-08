@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>{% if page.title %}{{ page.title }} - Justin Voss{% else %}Justin Voss{% endif %}</title>
+    <meta name="author" value="Justin Voss">
+    <meta property="og:type" content="website">
+
+    {% if page.blurb %}
+    <meta name="description" content="{{ page.blurb }}">
+    <meta property="og:description" content="{{ page.blurb }}">
+    <meta property="twitter:description" content="{{ page.blurb }}">
+    {% endif %}
+
+    {% if page.url %}
+    <meta property="og:url" content="https://justinvoss.com{{ page.url }}">
+    <meta property="twitter:url" content="https://justinvoss.com{{ page.url }}">
+    {% endif %}
+
+    {% if page.video.poster %}
+    <meta property="og:image" content="https://justinvoss.com/static/post_assets/{{ page.video.poster }}">
+    <meta property="twitter:image" content="https://justinvoss.com/static/post_assets/{{ page.video.poster }}">
+    {% endif %}
+
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
     {% if layout.wants_bigfoot %}<link rel="stylesheet" type="text/css" href="/static/css/bigfoot-default.css">{% endif %}
     {% if layout.wants_video %}
@@ -28,8 +47,6 @@
 
     <link rel="alternate" type="application/atom+xml" href="/atom.xml">
     <link rel="alternate" type="application/json" href="/feed.json" />
-    
-    <meta name="author" value="Justin Voss">
     
     <link rel="me" href="https://micro.blog/justinvoss" />
     <link rel="me" href="https://twitter.com/justinvoss" />
