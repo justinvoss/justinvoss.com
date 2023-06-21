@@ -177,6 +177,11 @@ hr {
 	margin: 3em;
 }
 
+sup {
+	vertical-align: super;
+	font-size: 80%;
+}
+
 .l-site-header {
 	padding: 0 16px;
 	display: flex;
