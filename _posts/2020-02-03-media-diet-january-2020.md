@@ -2,7 +2,7 @@
 layout: post
 title: Media Diet New Year Edition
 blurb: Things I read and watched in January 2020.
-guid: dbba16b9-87ed-45b4-af2e-b4ebefd34630
+guid: tag:justinvoss.com,2020:dbba16b9-87ed-45b4-af2e-b4ebefd34630
 ---
 
 [Jason Kottke][kottke] posts a semi-regular [recap of his "media diet,"][kottke-media-diet] which I always find interesting. He only writes one or two sentences about each item, and gives them a letter grade, which I think is a great length: I don't [tweet][my-twitter] that much, and Twitter doesn't need my hot takes in real-time anyway, but I do think it's fun to write this stuff down to revisit later.

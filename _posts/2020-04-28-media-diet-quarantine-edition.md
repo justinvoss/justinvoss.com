@@ -2,7 +2,7 @@
 layout: post
 title: Media Diet Quarantine Edition
 blurb: Things I've been reading and watching while socially isolating.
-guid: 47031b95-7a41-43a4-9dcd-161c707acd43
+guid: tag:justinvoss.com,2020:47031b95-7a41-43a4-9dcd-161c707acd43
 ---
 
 Like all of you, I've spent the last few weeks almost exclusively at home, waiting for the virus to blow over. I've unfortunately spent most of my non-work time obsessively checking the news and social media instead of learning to bake sourdough or write the next great American novel, but that doesn't mean I have *nothing* to report for my "media diet" log.

@@ -2,7 +2,7 @@
 layout: post
 title: Smart Soda Fridge
 blurb: My project to build a custom smart thermostat for a glass-door fridge.
-guid: a6027c94-63c5-4936-a8b6-fbad09cc11db
+guid: tag:justinvoss.com,2023:a6027c94-63c5-4936-a8b6-fbad09cc11db
 ---
 
 My latest ~~irresponsible splurge~~ totally necessary purchase was a drink refrigerator, the kind you might see in a convenience store, with a glass front and shelf racks for storing cans and bottles (the industry term for a fridge like this is apparently a "glass-door merchandiser"). I got mine on Craigslist for a mere $190, which is way less than the thousands they cost new. It seemed fine at first: the compressor and fan worked, but the power cord was damaged so deeply that bare copper was visible, and it had a mildew smell inside. So after taking it apart, replacing the power cable, and thoroughly cleaning, I plugged it in and discovered the biggest problem: the thermostat didn't seem to be working correctly. An OEM thermostat costs over a hundred dollars, which is more than I wanted to spend on this. Being the nerd that I am, I figured I could put together something that not only would work as a functional replacement, but actually be even better: a smart thermostat I could monitor and control remotely!

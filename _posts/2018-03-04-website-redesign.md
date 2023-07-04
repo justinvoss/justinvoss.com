@@ -2,7 +2,7 @@
 layout: post
 title: Website Redesign 2018
 blurb: "New design: watch out for wet paint."
-guid: 49C0B569-E29E-47A3-BF63-75BCC3B4192E
+guid: tag:justinvoss.com,2018:49C0B569-E29E-47A3-BF63-75BCC3B4192E
 ---
 
 After what I think must be about six years of the current design, I finally made some updates around here and refreshed my look. Spending time on a redesign instead actually, you know, _writing_ is such a clich&#233;, but here we are.
