@@ -5,7 +5,7 @@
     "title": "Justin Voss",
     "home_page_url": "https://justinvoss.com/",
     "feed_url": "https://justinvoss.com/feed.json",
-    "icon": "https://justinvoss.com/apple-touch-icon-precomposed.png",
+    "icon": "https://justinvoss.com/apple-touch-icon.png",
     "items": [
         {% for post in site.posts %}
         {
