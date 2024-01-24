@@ -22,8 +22,8 @@ Not long after launching, it even climbed to the #1 Music app in nine different 
 [greg]: http://www.gregdougherty.com/
 
 [tuaw]: https://www.engadget.com/2012/02/13/daily-mac-app-simple-skip-tunes-feels-like-it-should-be-part-of/
-[lifehacker]: https://lifehacker.com/5882964/skip-tunes-gives-you-menu-bar-access-to-controls-for-rdio-spotify-and-itunes
-[cnet]: https://www.cnet.com/how-to/gain-easy-control-of-your-music-with-mac-app-skip-tunes/
+[lifehacker]: https://web.archive.org/web/20120311104706/https://lifehacker.com/5882964/skip-tunes-gives-you-menu-bar-access-to-controls-for-rdio-spotify-and-itunes
+[cnet]: https://web.archive.org/web/20210924161546/https://www.cnet.com/how-to/gain-easy-control-of-your-music-with-mac-app-skip-tunes/
 [cultofmac]: https://www.cultofmac.com/146543/skip-tunes-a-simple-way-to-control-itunes-or-spotify-from-your-macs-menu-bar-review/
 [macworld]: https://www.macworld.com/article/1165456/skip_tunes_is_a_simple_and_elegant_music_controller.html
 

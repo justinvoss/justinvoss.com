@@ -9,7 +9,7 @@ a Python tool for automating sysadmin tasks over SSH. This is the first time at 
 that we had someone record video, (thank you [Robert Boyd][rboyd]) so enjoy the talk below.
 
 [greg]: https://www.gregaker.net/
-[comorichweb]: http://comorichweb.posterous.com/
+[comorichweb]: https://web.archive.org/web/20111001175935/http://comorichweb.posterous.com/
 [Fabric]: http://www.fabfile.org/
 [rboyd]: https://twitter.com/rboyd
 

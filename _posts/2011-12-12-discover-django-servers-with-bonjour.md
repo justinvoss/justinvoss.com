@@ -195,7 +195,7 @@ into everything it has to offer.
 
 [bonjour-wiki]: https://en.wikipedia.org/wiki/Bonjour_(software)
 [runserver-bonjour]: https://gist.github.com/1452921
-[dns-sd-man]: https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/dns-sd.1.html
+[dns-sd-man]: https://www.unix.com/man-page/osx/1/dns-sd/
 [service-types]: http://www.dns-sd.org/ServiceTypes.html
 [rbserverlocator]: https://gist.github.com/1465170
 [bonjour-adc]: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/NetServices/Introduction.html
